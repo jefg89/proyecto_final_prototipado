@@ -1,5 +1,5 @@
-#ifndef _ANN_H
-#define _ANN_H
+#ifndef _BPA_H
+#define _BPA_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -29,20 +29,13 @@ float * delta_pj; //hidden layer delta
 float **w_ji;
 float *w_kj;
 
-/*initialize neural network architecture*/
-void init_network_1_D();
 
-/*one dimensional ann structural function set*/
-void input_layer_1_D(float *in, float *out); 
-void hidden_layer_1_D(float * x_pi, float ** w_ji, float * y_pj);
-void output_layer_1_D(float *x , float *w_kj,float *b, float *Y ); 
-
-/*N input - single output ANN*/
+/*N input - single output ANN*/ //replace with hardware
 void ANN (float * In, float ** w_ji, float  * w_kj, float *b, float * y_pj,float * y_pk);
 
 
 /*one dimensional input - backpropagation algorithm*/
-void BPA (float **In,float *d_pk, float *b); //esta
+void BPA (float **In,float *d_pk, float *b); //
 
 
 
