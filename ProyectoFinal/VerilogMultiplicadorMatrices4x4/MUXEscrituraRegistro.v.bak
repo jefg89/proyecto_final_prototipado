@@ -1,0 +1,360 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    10:50:47 10/30/2014 
+// Design Name: 
+// Module Name:    MUXEscrituraRegistro 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module MUXEscrituraRegistro (
+ Address,Write,EnableStart,EnableRegister
+ );
+ 
+ input Write;
+ input [8:0] Address;
+ output    [63:0] EnableRegister ;
+ output  EnableStart;
+ 
+// always @*
+//	begin
+//		if(Write) begin
+//			case(Address)
+//				9'h00E: begin      
+//					EnableRegister<=64'd2**0;
+//				end
+//				9'h000: begin              
+//					EnableRegister<=64'd2**(1);
+//				end 
+//				9'h008: begin      
+//					EnableRegister<=64'd2**(2);
+//				end
+//				9'h00C: begin              
+//					EnableRegister<=64'd2**(3);
+//				end
+//				9'h010: begin  
+//					EnableRegister<=64'd2**(4);
+//				end
+//				9'h014: begin  
+//					EnableRegister<=64'd2**(5);
+//				end
+//				9'h018: begin  
+//					EnableRegister<=64'd2**(6);
+//				end
+//				9'h01C: begin 
+//					EnableRegister<=64'd2**(7);
+//				end
+//				9'h020: begin  
+//					EnableRegister<=64'd2**(8);
+//				end
+//				9'h024: begin  
+//					EnableRegister<=64'd2**(9);
+//				end
+//				9'h028: begin  
+//					EnableRegister<=64'd2**(10);
+//				end
+//				9'h02C: begin 
+//					EnableRegister<=64'd2**(11);
+//				end
+//				9'h030: begin  
+//					EnableRegister<=64'd2**(12);
+//				end
+//				9'h034: begin  
+//					EnableRegister<=64'd2**(13);
+//				end
+//				9'h038: begin  
+//					EnableRegister<=64'd2**(14);
+//				end
+//				9'h03C: begin 
+//					EnableRegister<=64'd2**(15);
+//				end
+//				9'h040: begin  
+//					EnableRegister<=64'd2**(16);
+//				end
+//				9'h044: begin  
+//					EnableRegister<=64'd2**(17);
+//				end
+//				9'h048: begin  
+//					EnableRegister<=64'd2**(18);
+//				end
+//				9'h04C: begin 
+//					EnableRegister<=64'd2**(19);
+//				end
+//				9'h050: begin  
+//					EnableRegister<=64'd2**(20);
+//				end
+//				9'h054: begin  
+//					EnableRegister<=64'd2**(21);
+//				end
+//				9'h058: begin  
+//					EnableRegister<=64'd2**(22);
+//				end
+//				9'h05C: begin 
+//					EnableRegister<=64'd2**(23);
+//				end
+//				9'h060: begin  
+//					EnableRegister<=64'd2**(24);
+//				end
+//				9'h064: begin  
+//					EnableRegister<=64'd2**(25);
+//				end
+//				9'h068: begin  
+//					EnableRegister<=64'd2**(26);
+//				end
+//				9'h06C: begin 
+//					EnableRegister<=64'd2**(27);
+//				end
+//				9'h070: begin  
+//					EnableRegister<=64'd2**(28);
+//				end
+//				9'h074: begin  
+//					EnableRegister<=64'd2**(29);
+//				end
+//				9'h078: begin  
+//					EnableRegister<=64'd2**(30);
+//				end
+//				9'h07C: begin 
+//					EnableRegister<=64'd2**(31);
+//				end
+//				9'h080: begin  
+//					EnableRegister<=64'd2**(32);
+//				end
+//				9'h084: begin  
+//					EnableRegister<=64'd2**(33);
+//				end
+//				9'h088: begin  
+//					EnableRegister<=64'd2**(34);
+//				end
+//				9'h08C: begin 
+//					EnableRegister<=64'd2**(35);
+//				end
+//				9'h090: begin  
+//					EnableRegister<=64'd2**(36);
+//				end
+//				9'h094: begin  
+//					EnableRegister<=64'd2**(37);
+//				end
+//				9'h098: begin  
+//					EnableRegister<=64'd2**(38);
+//				end
+//				9'h09C: begin 
+//					EnableRegister<=64'd2**(39);
+//				end
+//				9'h0A0: begin  
+//					EnableRegister<=64'd2**(40);
+//				end
+//				9'h0A4: begin  
+//				   EnableRegister<=64'd2**(41);
+//				end
+//				9'h0A8: begin  
+//					EnableRegister<=64'd2**(42);
+//				end
+//				9'h05AC: begin 
+//					EnableRegister<=64'd2**(43);
+//				end
+//				9'h0B0: begin  
+//					EnableRegister<=64'd2**(44);
+//				end
+//				9'h0B4: begin  
+//					EnableRegister<=64'd2**(45);
+//				end
+//				9'h0B8: begin  
+//					EnableRegister<=64'd2**(46);
+//				end
+//				9'h0BC: begin 
+//					EnableRegister<=64'd2**(47);
+//				end
+//				9'h0C0: begin  
+//					EnableRegister<=64'd2**(48);
+//				end
+//				9'h0C4: begin  
+//					EnableRegister<=64'd2**(49);
+//				end
+//				9'h0C8: begin  
+//					EnableRegister<=64'd2**(50);
+//				end
+//				9'h0CC: begin 
+//					EnableRegister<=64'd2**(51);
+//				end
+//				9'h0D0: begin  
+//					EnableRegister<=64'd2**(52);
+//				end
+//				9'h0D4: begin  
+//					EnableRegister<=64'd2**(53);
+//				end
+//				9'h0D8: begin  
+//					EnableRegister<=64'd2**(54);
+//				end
+//				9'h0DC: begin 
+//					EnableRegister<=64'd2**(55);
+//				end
+//				9'h0E0: begin  
+//					EnableRegister<=64'd2**(56);
+//				end
+//				9'h0E4: begin  
+//					EnableRegister<=64'd2**(57);
+//				end
+//				9'h0E8: begin  
+//					EnableRegister<=64'd2**(58);
+//				end
+//				9'h0EC: begin 
+//					EnableRegister<=64'd2**(59);
+//				end
+//				9'h0F0: begin  
+//					EnableRegister<=64'd2**(60);
+//				end
+//				9'h0F4: begin  
+//					EnableRegister<=64'd2**(61);
+//				end
+//				9'h0F8: begin  
+//					EnableRegister<=64'd2**(62);
+//				end
+//				9'h0FC: begin 
+//					EnableRegister<=64'd2**(63);
+//				end
+//				/*9'h100: begin  
+//					
+//				end
+//				9'h104: begin  
+//					
+//				end
+//				9'h108: begin  
+//					
+//				end
+//				9'h10C: begin 
+//					
+//				end
+//				9'h110: begin  
+//					
+//				end
+//				9'h114: begin  
+//					
+//				end
+//				9'h118: begin  
+//					
+//				end
+//				9'h11C: begin 
+//					
+//				end
+//				9'h120: begin  
+//					
+//				end
+//				9'h124: begin  
+//					
+//				end
+//				9'h128: begin  
+//					
+//				end
+//				9'h12C: begin 
+//					
+//				end
+//				9'h130: begin  
+//					
+//				end
+//				9'h134: begin  
+//					
+//				end
+//				9'h138: begin  
+//					
+//				end
+//				9'h13C: begin 
+//					
+//				end
+//				9'h140: begin  
+//					
+//				end
+//				9'h144: begin  
+//					
+//				end*/
+//				default: begin  
+//					EnableRegister<=(2**63)-1;
+//				end
+//			endcase
+//		end
+//	end
+
+	assign EnableStart = (Address==9'hFFC) ? 1'b1 : 1'b0 ;
+	
+	assign EnableRegister[0] = (Address==9'h000)&Write ? 1'b1 : 1'b0 ;
+	assign EnableRegister[1] = (Address==9'h004)&Write ? 1'b1 : 1'b0 ;
+	assign EnableRegister[2] = (Address==9'h008)&Write ? 1'b1 : 1'b0 ;
+	assign EnableRegister[3] = (Address==9'h00C)&Write ? 1'b1 : 1'b0 ;
+	assign EnableRegister[4] = (Address==9'h010)&Write ? 1'b1 : 1'b0 ;
+	assign EnableRegister[5] = (Address==9'h014)&Write ? 1'b1 : 1'b0 ;
+	assign EnableRegister[6] = (Address==9'h018)&Write ? 1'b1 : 1'b0 ;
+	assign EnableRegister[7] = (Address==9'h01C)&Write ? 1'b1 : 1'b0 ;
+	assign EnableRegister[8] = (Address==9'h020)&Write ? 1'b1 : 1'b0 ;
+	assign EnableRegister[9] = (Address==9'h024)&Write ? 1'b1 : 1'b0 ;
+	assign EnableRegister[10] = (Address==9'h028)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[11] = (Address==9'h02C)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[12] = (Address==9'h030)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[13] = (Address==9'h034)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[14] = (Address==9'h038)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[15] = (Address==9'h03C)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[16] = (Address==9'h040)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[17] = (Address==9'h044)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[18] = (Address==9'h048)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[19] = (Address==9'h04C)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[20] = (Address==9'h050)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[21] = (Address==9'h054)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[22] = (Address==9'h058)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[23] = (Address==9'h05C)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[24] = (Address==9'h060)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[25] = (Address==9'h064)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[26] = (Address==9'h068)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[27] = (Address==9'h06C)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[28] = (Address==9'h070)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[29] = (Address==9'h074)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[30] = (Address==9'h078)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[31] = (Address==9'h07C)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[32] = (Address==9'h080)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[33] = (Address==9'h084)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[34] = (Address==9'h088)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[35] = (Address==9'h08C)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[36] = (Address==9'h090)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[37] = (Address==9'h094)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[38] = (Address==9'h098)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[39] = (Address==9'h09C)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[40] = (Address==9'h0A0)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[41] = (Address==9'h0A4)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[42] = (Address==9'h0A8)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[43] = (Address==9'h0AC)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[44] = (Address==9'h0B0)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[45] = (Address==9'h0B4)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[46] = (Address==9'h0B8)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[47] = (Address==9'h0BC)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[48] = (Address==9'h0C0)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[49] = (Address==9'h0C4)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[50] = (Address==9'h0C8)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[51] = (Address==9'h0CC)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[52] = (Address==9'h0D0)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[53] = (Address==9'h0D4)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[54] = (Address==9'h0D8)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[55] = (Address==9'h0DC)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[56] = (Address==9'h0E0)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[57] = (Address==9'h0E4)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[58] = (Address==9'h0E8)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[59] = (Address==9'h0EC)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[60] = (Address==9'h0F0)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[61] = (Address==9'h0F4)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[62] = (Address==9'h0F8)&Write ? 1'b1 : 1'b0; 
+	assign EnableRegister[63] = (Address==9'h0FC)&Write ? 1'b1 : 1'b0; 
+	
+ 
+	
+ 
+	 
+
+
+endmodule

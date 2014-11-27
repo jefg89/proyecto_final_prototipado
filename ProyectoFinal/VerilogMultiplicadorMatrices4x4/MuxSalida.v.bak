@@ -1,0 +1,84 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    16:12:59 10/30/2014 
+// Design Name: 
+// Module Name:    MuxSalida 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module MuxSalida #(parameter Width = 8)
+(Read,Address,
+Out11Real,Out11Imag,Out12Real,Out12Imag,Out13Real,Out13Imag,Out14Real,Out14Imag,
+Out21Real,Out21Imag,Out22Real,Out22Imag,Out23Real,Out23Imag,Out24Real,Out24Imag,
+Out31Real,Out31Imag,Out32Real,Out32Imag,Out33Real,Out33Imag,Out34Real,Out34Imag,
+Out41Real,Out41Imag,Out42Real,Out42Imag,Out43Real,Out43Imag,Out44Real,Out44Imag,OutMux);
+	
+	input Read;
+   input [8:0] Address; 
+	output reg signed [Width-1:0] OutMux;
+	
+	input signed [Width-1:0] Out11Real,Out11Imag,Out12Real,Out12Imag,Out13Real,Out13Imag,Out14Real,Out14Imag,
+Out21Real,Out21Imag,Out22Real,Out22Imag,Out23Real,Out23Imag,Out24Real,Out24Imag,
+Out31Real,Out31Imag,Out32Real,Out32Imag,Out33Real,Out33Imag,Out34Real,Out34Imag,
+Out41Real,Out41Imag,Out42Real,Out42Imag,Out43Real,Out43Imag,Out44Real,Out44Imag;
+
+	always @(Address, Out11Real,Out11Imag,Out12Real,Out12Imag,Out13Real,Out13Imag,Out14Real,Out14Imag,
+Out21Real,Out21Imag,Out22Real,Out22Imag,Out23Real,Out23Imag,Out24Real,Out24Imag,
+Out31Real,Out31Imag,Out32Real,Out32Imag,Out33Real,Out33Imag,Out34Real,Out34Imag,
+Out41Real,Out41Imag,Out42Real,Out42Imag,Out43Real,Out43Imag,Out44Real,Out44Imag,Read)
+      if (Read) begin
+		case (Address)
+         9'h100: OutMux <= Out11Real;
+         9'h104: OutMux <= Out11Imag;
+         9'h108: OutMux <= Out12Real;
+         9'h10C: OutMux <= Out12Imag;
+         9'h120: OutMux <= Out13Real;
+         9'h124: OutMux <= Out13Imag;
+         9'h128: OutMux <= Out14Real;
+         9'h12C: OutMux <= Out14Imag;
+			9'h130: OutMux <= Out21Real;
+         9'h134: OutMux <= Out21Imag;
+         9'h138: OutMux <= Out22Real;
+         9'h13C: OutMux <= Out22Imag;
+         9'h140: OutMux <= Out23Real;
+         9'h144: OutMux <= Out23Imag;
+         9'h148: OutMux <= Out24Real;
+         9'h14C: OutMux <= Out24Imag;
+			9'h150: OutMux <= Out31Real;
+         9'h154: OutMux <= Out31Imag;
+         9'h158: OutMux <= Out32Real;
+         9'h15C: OutMux <= Out32Imag;
+         9'h160: OutMux <= Out33Real;
+         9'h164: OutMux <= Out33Imag;
+         9'h168: OutMux <= Out34Real;
+         9'h16C: OutMux <= Out34Imag;
+			9'h170: OutMux <= Out41Real;
+         9'h174: OutMux <= Out41Imag;
+         9'h178: OutMux <= Out42Real;
+         9'h17C: OutMux <= Out42Imag;
+         9'h170: OutMux <= Out43Real;
+         9'h174: OutMux <= Out43Imag;
+         9'h178: OutMux <= Out44Real;
+         9'h17C: OutMux <= Out44Imag;
+			default: OutMux <= 0;
+      endcase
+	end
+	else begin
+		OutMux <= 0;
+	end
+	 
+	
+
+endmodule

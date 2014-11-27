@@ -1,0 +1,39 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    16:28:16 10/30/2014 
+// Design Name: 
+// Module Name:    RegistrodeListo 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module RegistrodeListo #(parameter Width = 32) (CLK,ResetMaster,EnableListo,Out,DatosIn
+    );
+	 
+	 input CLK,ResetMaster,EnableListo;
+	 output reg Out =0;
+	  
+	 input [Width-1:0] DatosIn;
+	 
+	 always @(posedge CLK)
+      if (ResetMaster | DatosIn) begin
+         Out <= 1'b0;
+      end else if (EnableListo) begin
+         Out <= 1'b1;
+      end
+	 
+	 
+
+
+endmodule
