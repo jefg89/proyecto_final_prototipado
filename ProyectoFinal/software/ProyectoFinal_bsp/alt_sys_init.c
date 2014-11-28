@@ -1,10 +1,10 @@
 /*
  * alt_sys_init.c - HAL initialization source
  *
- * Machine generated for CPU 'nios2_qsys_0' in SOPC Builder design 'soc_matrix'
- * SOPC Builder design path: C:/Users/Yeiner/Documents/GitHub/proyecto_final_prototipado/ProyectoFinal/soc_matrix.sopcinfo
+ * Machine generated for CPU 'NIOS_II' in SOPC Builder design 'SOC'
+ * SOPC Builder design path: C:/Users/Yeiner/Desktop/ProyectoFinal/SOC.sopcinfo
  *
- * Generated: Thu Nov 27 18:30:22 CST 2014
+ * Generated: Thu Nov 27 23:23:52 CST 2014
  */
 
 /*
@@ -67,7 +67,7 @@
  * Allocate the device storage
  */
 
-ALTERA_NIOS2_QSYS_IRQ_INSTANCE ( NIOS2_QSYS_0, nios2_qsys_0);
+ALTERA_NIOS2_QSYS_IRQ_INSTANCE ( NIOS_II, NIOS_II);
 ALTERA_AVALON_JTAG_UART_INSTANCE ( JTAG_UART_0, jtag_uart_0);
 ALTERA_AVALON_SYSID_QSYS_INSTANCE ( SYSID_QSYS_0, sysid_qsys_0);
 ALTERA_AVALON_TIMER_INSTANCE ( TIMER_0, timer_0);
@@ -82,7 +82,7 @@ ALTERA_AVALON_TIMER_INSTANCE ( TIMER_0, timer_0);
 
 void alt_irq_init ( const void* base )
 {
-    ALTERA_NIOS2_QSYS_IRQ_INIT ( NIOS2_QSYS_0, nios2_qsys_0);
+    ALTERA_NIOS2_QSYS_IRQ_INIT ( NIOS_II, NIOS_II);
     alt_irq_cpu_enable_interrupts();
 }
 

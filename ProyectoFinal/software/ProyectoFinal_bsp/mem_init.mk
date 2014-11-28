@@ -162,7 +162,7 @@ RESET_ADDRESS ?= 0x00004000
 #-------------------------------------
 
 # Memory: RAM
-MEM_0 := soc_matrix_RAM
+MEM_0 := SOC_RAM
 $(MEM_0)_NAME := RAM
 $(MEM_0)_MEM_INIT_FILE_PARAM_NAME := INIT_FILE
 HEX_FILES += $(MEM_INIT_DIR)/$(MEM_0).hex

@@ -2,13 +2,13 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>27/11/2014 06:31:25 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1417134685135</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>C:\Users\Yeiner\Documents\GitHub\proyecto_final_prototipado\ProyectoFinal\software\ProyectoFinal_bsp</BspGeneratedLocation>
+        <BspGeneratedTimeStamp>27/11/2014 11:25:38 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1417152338706</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>C:\Users\Yeiner\Desktop\ProyectoFinal\software\ProyectoFinal_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
-        <SopcDesignFile>C:\Users\Yeiner\Documents\GitHub\proyecto_final_prototipado\ProyectoFinal\soc_matrix.sopcinfo</SopcDesignFile>
+        <SopcDesignFile>C:\Users\Yeiner\Desktop\ProyectoFinal\SOC.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
-        <Cpu>nios2_qsys_0</Cpu>
+        <Cpu>NIOS_II</Cpu>
         <SchemaVersion>1.9</SchemaVersion>
         <Setting>
                 <SettingName>hal.sys_clk_timer</SettingName>
@@ -863,21 +863,9 @@
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <MemoryMap>
-                <slaveDescriptor>General_Purpuose_Register_0</slaveDescriptor>
-                <addressRange>0x00000000 - 0x00000FFF</addressRange>
-                <addressSpan>4096</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>lfsr_0</slaveDescriptor>
+                <slaveDescriptor>Ifsr_0</slaveDescriptor>
                 <addressRange>0x00001000 - 0x00001003</addressRange>
                 <addressSpan>4</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
-                <slaveDescriptor>HW_accelelator_0</slaveDescriptor>
-                <addressRange>0x00002000 - 0x000027FF</addressRange>
-                <addressSpan>2048</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>

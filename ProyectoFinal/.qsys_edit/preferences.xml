@@ -5,18 +5,16 @@
   <columns>
    <connections preferredWidth="111" />
    <irq preferredWidth="34" />
-   <name preferredWidth="261" />
-   <export preferredWidth="342" />
   </columns>
  </systemtable>
  <clocktable>
   <columns>
    <clockname preferredWidth="218" />
-   <clocksource preferredWidth="217" />
-   <frequency preferredWidth="211" />
+   <clocksource preferredWidth="218" />
+   <frequency preferredWidth="210" />
   </columns>
  </clocktable>
- <library expandedCategories="Library,Project" />
- <window width="960" height="1032" x="0" y="0" />
+ <library expandedCategories="Project,Library" />
+ <window width="960" height="1032" x="960" y="0" />
  <hdlexample language="VERILOG" />
 </preferences>

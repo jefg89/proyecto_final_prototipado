@@ -1,10 +1,10 @@
 /*
  * linker.x - Linker script
  *
- * Machine generated for CPU 'nios2_qsys_0' in SOPC Builder design 'soc_matrix'
- * SOPC Builder design path: C:/Users/Yeiner/Documents/GitHub/proyecto_final_prototipado/ProyectoFinal/soc_matrix.sopcinfo
+ * Machine generated for CPU 'NIOS_II' in SOPC Builder design 'SOC'
+ * SOPC Builder design path: C:/Users/Yeiner/Desktop/ProyectoFinal/SOC.sopcinfo
  *
- * Generated: Thu Nov 27 18:30:22 CST 2014
+ * Generated: Thu Nov 27 23:23:52 CST 2014
  */
 
 /*

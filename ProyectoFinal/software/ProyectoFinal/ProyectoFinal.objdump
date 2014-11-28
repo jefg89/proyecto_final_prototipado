@@ -35,47 +35,47 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   8 .debug_pubnames 000006cb  00000000  00000000  00003470  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_info   00008b29  00000000  00000000  00003b3b  2**0
+  9 .debug_info   000086cd  00000000  00000000  00003b3b  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_abbrev 00001f68  00000000  00000000  0000c664  2**0
+ 10 .debug_abbrev 00001f68  00000000  00000000  0000c208  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_line   000058d3  00000000  00000000  0000e5cc  2**0
+ 11 .debug_line   000058d3  00000000  00000000  0000e170  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_frame  000007b8  00000000  00000000  00013ea0  2**2
+ 12 .debug_frame  000007b8  00000000  00000000  00013a44  2**2
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_str    00000b19  00000000  00000000  00014658  2**0
+ 13 .debug_str    00000b19  00000000  00000000  000141fc  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_loc    00000c84  00000000  00000000  00015171  2**0
+ 14 .debug_loc    00000c84  00000000  00000000  00014d15  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_alt_sim_info 00000010  00000000  00000000  00015df8  2**2
+ 15 .debug_alt_sim_info 00000010  00000000  00000000  0001599c  2**2
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_ranges 00000090  00000000  00000000  00015e08  2**3
+ 16 .debug_ranges 00000090  00000000  00000000  000159b0  2**3
                   CONTENTS, READONLY, DEBUGGING
- 17 .thread_model 00000003  00000000  00000000  000176a6  2**0
+ 17 .thread_model 00000003  00000000  00000000  0001724e  2**0
                   CONTENTS, READONLY
- 18 .cpu          0000000c  00000000  00000000  000176a9  2**0
+ 18 .cpu          00000007  00000000  00000000  00017251  2**0
                   CONTENTS, READONLY
- 19 .qsys         00000001  00000000  00000000  000176b5  2**0
+ 19 .qsys         00000001  00000000  00000000  00017258  2**0
                   CONTENTS, READONLY
- 20 .simulation_enabled 00000001  00000000  00000000  000176b6  2**0
+ 20 .simulation_enabled 00000001  00000000  00000000  00017259  2**0
                   CONTENTS, READONLY
- 21 .sysid_hash   00000004  00000000  00000000  000176b7  2**0
+ 21 .sysid_hash   00000004  00000000  00000000  0001725a  2**0
                   CONTENTS, READONLY
- 22 .sysid_base   00000004  00000000  00000000  000176bb  2**0
+ 22 .sysid_base   00000004  00000000  00000000  0001725e  2**0
                   CONTENTS, READONLY
- 23 .sysid_time   00000004  00000000  00000000  000176bf  2**0
+ 23 .sysid_time   00000004  00000000  00000000  00017262  2**0
                   CONTENTS, READONLY
- 24 .stderr_dev   0000000b  00000000  00000000  000176c3  2**0
+ 24 .stderr_dev   0000000b  00000000  00000000  00017266  2**0
                   CONTENTS, READONLY
- 25 .stdin_dev    0000000b  00000000  00000000  000176ce  2**0
+ 25 .stdin_dev    0000000b  00000000  00000000  00017271  2**0
                   CONTENTS, READONLY
- 26 .stdout_dev   0000000b  00000000  00000000  000176d9  2**0
+ 26 .stdout_dev   0000000b  00000000  00000000  0001727c  2**0
                   CONTENTS, READONLY
- 27 .sopc_system_name 0000000a  00000000  00000000  000176e4  2**0
+ 27 .sopc_system_name 00000003  00000000  00000000  00017287  2**0
                   CONTENTS, READONLY
- 28 .quartus_project_dir 00000049  00000000  00000000  000176ee  2**0
+ 28 .quartus_project_dir 00000025  00000000  00000000  0001728a  2**0
                   CONTENTS, READONLY
- 29 .sopcinfo     000412b4  00000000  00000000  00017737  2**0
+ 29 .sopcinfo     000337c5  00000000  00000000  000172af  2**0
                   CONTENTS, READONLY
 SYMBOL TABLE:
 00004000 l    d  .entry	00000000 .entry
@@ -1103,7 +1103,7 @@ void alt_irq_init ( const void* base )
     46f0:	df000115 	stw	fp,4(sp)
     46f4:	df000104 	addi	fp,sp,4
     46f8:	e13fff15 	stw	r4,-4(fp)
-    ALTERA_NIOS2_QSYS_IRQ_INIT ( NIOS2_QSYS_0, nios2_qsys_0);
+    ALTERA_NIOS2_QSYS_IRQ_INIT ( NIOS_II, NIOS_II);
     46fc:	00056e40 	call	56e4 <altera_nios2_qsys_irq_init>
  * alt_irq_cpu_enable_interrupts() enables the CPU to start taking interrupts.
  */

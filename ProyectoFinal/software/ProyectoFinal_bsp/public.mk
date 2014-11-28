@@ -87,7 +87,7 @@ ACDS_VERSION := 13.0sp1
 
 # Qsys--generated SOPCINFO file. Required for resolving node instance ID's with 
 # design component names. 
-SOPCINFO_FILE := C:/Users/Yeiner/Documents/GitHub/proyecto_final_prototipado/ProyectoFinal/soc_matrix.sopcinfo
+SOPCINFO_FILE := C:/Users/Yeiner/Desktop/ProyectoFinal/SOC.sopcinfo
 
 # Big-Endian operation. 
 # setting BIG_ENDIAN is false
@@ -108,8 +108,8 @@ ALT_CPPFLAGS += -D__hal__
 BSP_TYPE := hal
 
 # CPU Name 
-# setting CPU_NAME is nios2_qsys_0
-CPU_NAME = nios2_qsys_0
+# setting CPU_NAME is NIOS_II
+CPU_NAME = NIOS_II
 ELF_PATCH_FLAG  += --cpu_name $(CPU_NAME)
 
 # Hardware Divider present. 
@@ -134,8 +134,8 @@ QSYS := 1
 ELF_PATCH_FLAG += --qsys true
 
 # Design Name 
-# setting SOPC_NAME is soc_matrix
-SOPC_NAME := soc_matrix
+# setting SOPC_NAME is SOC
+SOPC_NAME := SOC
 
 # SopcBuilder Simulation Enabled 
 # setting SOPC_SIMULATION_ENABLED is false
@@ -152,9 +152,9 @@ SOPC_SYSID_FLAG += --sidp=0x9030
 ELF_PATCH_FLAG  += --sidp 0x9030
 
 # The SOPC Timestamp 
-# setting SOPC_TIMESTAMP is 1415548537
-SOPC_SYSID_FLAG += --timestamp=1415548537
-ELF_PATCH_FLAG  += --timestamp 1415548537
+# setting SOPC_TIMESTAMP is 1417152025
+SOPC_SYSID_FLAG += --timestamp=1417152025
+ELF_PATCH_FLAG  += --timestamp 1417152025
 
 # Enable JTAG UART driver to recover when host is inactive causing buffer to 
 # full without returning error. Printf will not fail with this recovery. none 

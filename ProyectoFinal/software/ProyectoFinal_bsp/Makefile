@@ -103,7 +103,7 @@ ACDS_VERSION := 13.0sp1
 # BUILD_NUMBER: 232
 
 SETTINGS_FILE := settings.bsp
-SOPC_FILE := C:/Users/Yeiner/Documents/GitHub/proyecto_final_prototipado/ProyectoFinal/soc_matrix.sopcinfo
+SOPC_FILE := C:/Users/Yeiner/Desktop/ProyectoFinal/SOC.sopcinfo
 
 #-------------------------------------------------------------------------------
 #                             TOOL & COMMAND DEFINITIONS

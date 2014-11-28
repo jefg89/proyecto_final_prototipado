@@ -5,7 +5,7 @@
 BSP_TYPE=hal
 BSP_DIR=.
 SOPC_DIR=../../
-SOPC_FILE=C:/Users/Yeiner/Documents/GitHub/proyecto_final_prototipado/ProyectoFinal/soc_matrix.sopcinfo
+SOPC_FILE=C:/Users/Yeiner/Desktop/ProyectoFinal/SOC.sopcinfo
 NIOS2_BSP_ARGS=""
 CPU_NAME=
 

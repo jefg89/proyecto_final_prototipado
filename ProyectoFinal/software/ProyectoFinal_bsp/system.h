@@ -1,10 +1,10 @@
 /*
  * system.h - SOPC Builder system and BSP software package information
  *
- * Machine generated for CPU 'nios2_qsys_0' in SOPC Builder design 'soc_matrix'
- * SOPC Builder design path: C:/Users/Yeiner/Documents/GitHub/proyecto_final_prototipado/ProyectoFinal/soc_matrix.sopcinfo
+ * Machine generated for CPU 'NIOS_II' in SOPC Builder design 'SOC'
+ * SOPC Builder design path: C:/Users/Yeiner/Desktop/ProyectoFinal/SOC.sopcinfo
  *
- * Generated: Thu Nov 27 18:30:22 CST 2014
+ * Generated: Thu Nov 27 23:23:52 CST 2014
  */
 
 /*
@@ -84,7 +84,7 @@
 #define ALT_CPU_ICACHE_LINE_SIZE_LOG2 0
 #define ALT_CPU_ICACHE_SIZE 0
 #define ALT_CPU_INST_ADDR_WIDTH 0x10
-#define ALT_CPU_NAME "nios2_qsys_0"
+#define ALT_CPU_NAME "NIOS_II"
 #define ALT_CPU_RESET_ADDR 0x4000
 
 
@@ -128,37 +128,21 @@
 #define __ALTERA_AVALON_SYSID_QSYS
 #define __ALTERA_AVALON_TIMER
 #define __ALTERA_NIOS2_QSYS
-#define __GENERAL_PURPUOSE_REGISTER
-#define __HW_ACCELELATOR
-#define __LFSR
+#define __IFSR
 
 
 /*
- * General_Purpuose_Register_0 configuration
+ * Ifsr_0 configuration
  *
  */
 
-#define ALT_MODULE_CLASS_General_Purpuose_Register_0 General_Purpuose_Register
-#define GENERAL_PURPUOSE_REGISTER_0_BASE 0x0
-#define GENERAL_PURPUOSE_REGISTER_0_IRQ 1
-#define GENERAL_PURPUOSE_REGISTER_0_IRQ_INTERRUPT_CONTROLLER_ID 0
-#define GENERAL_PURPUOSE_REGISTER_0_NAME "/dev/General_Purpuose_Register_0"
-#define GENERAL_PURPUOSE_REGISTER_0_SPAN 4096
-#define GENERAL_PURPUOSE_REGISTER_0_TYPE "General_Purpuose_Register"
-
-
-/*
- * HW_accelelator_0 configuration
- *
- */
-
-#define ALT_MODULE_CLASS_HW_accelelator_0 HW_accelelator
-#define HW_ACCELELATOR_0_BASE 0x2000
-#define HW_ACCELELATOR_0_IRQ 2
-#define HW_ACCELELATOR_0_IRQ_INTERRUPT_CONTROLLER_ID 0
-#define HW_ACCELELATOR_0_NAME "/dev/HW_accelelator_0"
-#define HW_ACCELELATOR_0_SPAN 2048
-#define HW_ACCELELATOR_0_TYPE "HW_accelelator"
+#define ALT_MODULE_CLASS_Ifsr_0 Ifsr
+#define IFSR_0_BASE 0x1000
+#define IFSR_0_IRQ -1
+#define IFSR_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define IFSR_0_NAME "/dev/Ifsr_0"
+#define IFSR_0_SPAN 4
+#define IFSR_0_TYPE "Ifsr"
 
 
 /*
@@ -173,7 +157,7 @@
 #define RAM_CONTENTS_INFO ""
 #define RAM_DUAL_PORT 0
 #define RAM_GUI_RAM_BLOCK_TYPE "AUTO"
-#define RAM_INIT_CONTENTS_FILE "soc_matrix_RAM"
+#define RAM_INIT_CONTENTS_FILE "SOC_RAM"
 #define RAM_INIT_MEM_CONTENT 1
 #define RAM_INSTANCE_ID "NONE"
 #define RAM_IRQ -1
@@ -223,7 +207,7 @@
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
 #define ALT_STDOUT_TYPE "altera_avalon_jtag_uart"
-#define ALT_SYSTEM_NAME "soc_matrix"
+#define ALT_SYSTEM_NAME "SOC"
 
 
 /*
@@ -255,20 +239,6 @@
 
 
 /*
- * lfsr_0 configuration
- *
- */
-
-#define ALT_MODULE_CLASS_lfsr_0 lfsr
-#define LFSR_0_BASE 0x1000
-#define LFSR_0_IRQ -1
-#define LFSR_0_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define LFSR_0_NAME "/dev/lfsr_0"
-#define LFSR_0_SPAN 4
-#define LFSR_0_TYPE "lfsr"
-
-
-/*
  * sysid_qsys_0 configuration
  *
  */
@@ -280,7 +250,7 @@
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1415548537
+#define SYSID_QSYS_0_TIMESTAMP 1417152025
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 
