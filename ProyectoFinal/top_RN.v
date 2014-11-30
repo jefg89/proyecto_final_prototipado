@@ -1,6 +1,6 @@
 module top_RN (
 	input clk,
-	output [7:0] LEDs
+	output [7:0] LEDs //
 );
 
 
