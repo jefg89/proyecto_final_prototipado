@@ -196,6 +196,28 @@ B30 = 30)
     .Address(address),                          //******************************
     .ListoIn(Listo),                            //******************************
     .InDato(OutFuncSigmodailAlmacenada),        //******************************
+	 .Coeff00(Coeff00),                          //******************************
+    .Coeff01(Coeff01),                          //******************************
+    .Coeff02(Coeff02),                          //****************************** 
+    .Coeff03(Coeff03),                          //******************************
+    .Coeff04(Coeff04),                          //******************************
+    .Coeff05(Coeff05),                          //******************************
+    .Coeff06(Coeff06),                          //******************************
+    .Coeff07(Coeff07),                          //******************************
+    .Coeff08(Coeff08), 
+    .Coeff09(Coeff09), 
+    .Coeff10(Coeff10), 
+    .Coeff11(Coeff11), 
+    .Coeff12(Coeff12), 
+    .Coeff13(Coeff13), 
+    .Coeff14(Coeff14), 
+    .Coeff15(Coeff15), 
+    .Coeff16(Coeff16), 
+    .Coeff17(Coeff17), 
+    .Coeff18(Coeff18), 
+    .Coeff19(Coeff19), 
+    .Offset(Offset), 
+    .DatoEntradaSistema(InDato), 
     .OutDato(readdata)                          //******************************
     );
 	 
