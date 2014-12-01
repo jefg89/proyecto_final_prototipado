@@ -51,10 +51,26 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VERILOG_FILE SOC/synthesis/SOC.v
-set_global_assignment -name QSYS_FILE SOC.qsys
-set_global_assignment -name VERILOG_FILE top_RN.v
-set_global_assignment -name VERILOG_FILE lfsr.v
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_location_assignment PIN_L1 -to clk
+set_global_assignment -name VERILOG_FILE HDLNeuralNetwork/top_RN.v
+set_global_assignment -name VERILOG_FILE HDLNeuralNetwork/sumadorPuntoFijo.v
+set_global_assignment -name VERILOG_FILE HDLNeuralNetwork/RegistroWithMuxInput.v
+set_global_assignment -name VERILOG_FILE HDLNeuralNetwork/RegistroCargaInterfaz.v
+set_global_assignment -name VERILOG_FILE HDLNeuralNetwork/Registro.v
+set_global_assignment -name VERILOG_FILE HDLNeuralNetwork/multiplicadorPuntoFijo.v
+set_global_assignment -name VERILOG_FILE HDLNeuralNetwork/multiplexor32a1.v
+set_global_assignment -name VERILOG_FILE HDLNeuralNetwork/MainProyectoFinal.v
+set_global_assignment -name VERILOG_FILE HDLNeuralNetwork/lfsr.v
+set_global_assignment -name VERILOG_FILE HDLNeuralNetwork/FuncionActivacion.v
+set_global_assignment -name VERILOG_FILE HDLNeuralNetwork/FSMNeuronalNetwork.v
+set_global_assignment -name VERILOG_FILE HDLNeuralNetwork/EscrituraRegistroToMemoria.v
+set_global_assignment -name VERILOG_FILE HDLNeuralNetwork/DecoEscrituraRegistros.v
+set_global_assignment -name VERILOG_FILE HDLNeuralNetwork/Comparador.v
+set_global_assignment -name VERILOG_FILE HDLNeuralNetwork/ALUNeuronalNetwork.v
+set_global_assignment -name VERILOG_FILE HDLNeuralNetwork/ALUfuncionActivacion.v
+set_global_assignment -name VERILOG_FILE SOC/synthesis/SOC.v
+set_global_assignment -name QSYS_FILE SOC.qsys
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
