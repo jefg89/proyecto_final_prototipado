@@ -147,7 +147,11 @@
  <parameter name="projectName" value="ProyectoFinal.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
+<<<<<<< HEAD
  <parameter name="timeStamp" value="1417475900448" />
+=======
+ <parameter name="timeStamp" value="1417468553071" />
+>>>>>>> origin/master
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />

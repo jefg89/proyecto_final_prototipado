@@ -29,8 +29,13 @@
 // Generation parameters:
 //   output_name:         SOC_cmd_xbar_demux
 //   ST_DATA_W:           89
+<<<<<<< HEAD
 //   ST_CHANNEL_W:        7
 //   NUM_OUTPUTS:         4
+=======
+//   ST_CHANNEL_W:        6
+//   NUM_OUTPUTS:         3
+>>>>>>> origin/master
 //   VALID_WIDTH:         1
 // ------------------------------------------
 
@@ -121,6 +126,7 @@ module SOC_cmd_xbar_demux
         src2_channel       = sink_channel >> NUM_OUTPUTS;
 
         src2_valid         = sink_channel[2] && sink_valid;
+<<<<<<< HEAD
 
         src3_data          = sink_data;
         src3_startofpacket = sink_startofpacket;
@@ -128,6 +134,8 @@ module SOC_cmd_xbar_demux
         src3_channel       = sink_channel >> NUM_OUTPUTS;
 
         src3_valid         = sink_channel[3] && sink_valid;
+=======
+>>>>>>> origin/master
 
     end
 
