@@ -27,10 +27,9 @@ Start Register            0x158
 */
 #include <stdio.h>
 
-float x=1.1;
 int main()
 {
-  printf("Hello from Nios II!\n %d", x);
+  printf("Hello from Nios II!\n");
 
   return 0;
 }

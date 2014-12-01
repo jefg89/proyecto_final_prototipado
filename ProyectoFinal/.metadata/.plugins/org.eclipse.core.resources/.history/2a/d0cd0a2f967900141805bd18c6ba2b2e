@@ -30,7 +30,7 @@ Start Register            0x158
 float x=1.1;
 int main()
 {
-  printf("Hello from Nios II!\n %d", x);
+  printf("Hello from Nios II!\n %Le", x);
 
   return 0;
 }

@@ -1,23 +1,29 @@
 #ifndef _BPA_H
 #define _BPA_H
 
+
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-#include <time.h>
 
-int N_hidden=0; /*number of hidden neurons in layer*/
+
+/* Device Memory Map
+
+Device                      Dir
+
+W training coefs.      0x100 - 0x14C
+b output offset           0x150
+In traning data           0x154
+Start Register            0x158
+
+*/
+
+
+int N_hidden=10; /*number of hidden neurons in layer*/
 int N_in=0;  /*number of input variables*/
-int N_iter=0; /*number of training iterations*/
-int N_dat=0;  /*number of training data*/
+int N_iter=10; /*number of training iterations*/
+int N_dat=10;  /*number of training data*/
 
-/*activation function mode*/
+/*Training parameters*/
 int actFunc=0; 
-/*0 = logsig , 1= linear  /*
-/*------------------------*/
-
-
-
 float eta=0.0; /*learning speed*/
 float *b;
 
@@ -40,7 +46,6 @@ void BPA (float **In,float *d_pk, float *b); //
 
 
 //Ending head-------------------------------------------
-
 
 
 
@@ -73,6 +78,7 @@ for (i=0;i<N_hidden;i++){
 for (iter;iter<N_iter;iter++) {
 	int pos =0;
 	for (pos;pos<N_dat;pos++){
+		// llamar a la red
 		ANN (In[pos], w_ji, w_kj,b,y_pj,y_pk);//ANN run
 		//printf("salida %d = %f \n",pos,*y_pk);
  

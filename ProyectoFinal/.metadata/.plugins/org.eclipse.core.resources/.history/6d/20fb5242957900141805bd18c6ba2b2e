@@ -14,23 +14,11 @@
  *
  */
 
-
-/* Device Memory Map
-
-Device                      Dir
-
-W training coefs.      0x100 - 0x14C
-b output offset           0x150
-In traning data           0x154
-Start Register            0x158
-
-*/
 #include <stdio.h>
 
-float x=1.1;
 int main()
 {
-  printf("Hello from Nios II!\n %d", x);
+  printf("Hello from Nios II!\n");
 
   return 0;
 }
