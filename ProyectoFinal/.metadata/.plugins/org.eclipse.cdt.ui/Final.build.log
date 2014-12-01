@@ -6,12 +6,18 @@ Info: Building ../Final_bsp/
 make --no-print-directory -C ../Final_bsp/
 [BSP build complete]
 Info: Compiling hello_world.c to obj/default/hello_world.o
-nios2-elf-gcc -xc -MP -MMD -c -I../Final_bsp//HAL/inc -I../Final_bsp/ -I../Final_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_bsp//HAL/inc -I../Final_bsp/ -I../Final_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c:34: warning: initialization makes pointer from integer without a cast
 Info: Linking Final.elf
-nios2-elf-g++  -T'../Final_bsp//linker.x' -msys-crt0='../Final_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_bsp/  -msmallc  -Wl,-Map=Final.map   -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o Final.elf obj/default/hello_world.o -lm 
-nios2-elf-insert Final.elf --thread_model hal --cpu_name NIOS_II --qsys true --simulation_enabled false --id 0 --sidp 0x9030 --timestamp 1417468440 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name SOC --quartus_project_dir "C:/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal" --sopcinfo C:/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/SOC.sopcinfo
-Info: (Final.elf) 11 KBytes program size (code + initialized data).
-Info:             4088 Bytes free for stack + heap.
+hello_world.c:35: warning: initialization makes pointer from integer without a cast
+nios2-elf-g++  -T'../Final_bsp//linker.x' -msys-crt0='../Final_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_bsp/  -msmallc  -Wl,-Map=Final.map   -O0 -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final.elf obj/default/hello_world.o -lm 
+hello_world.c:37: warning: initialization makes pointer from integer without a cast
+nios2-elf-insert Final.elf --thread_model hal --cpu_name NIOS_II --qsys true --simulation_enabled false --id 0 --sidp 0x9030 --timestamp 1417476149 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name SOC --quartus_project_dir "C:/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal" --sopcinfo C:/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/SOC.sopcinfo
+hello_world.c:39: warning: initialization makes pointer from integer without a cast
+hello_world.c:41: warning: initialization makes pointer from integer without a cast
+hello_world.c:43: warning: initialization makes pointer from integer without a cast
+Info: (Final.elf) 10 KBytes program size (code + initialized data).
+Info:             4624 Bytes free for stack + heap.
 Info: Creating Final.objdump
 nios2-elf-objdump --disassemble --syms --all-header --source Final.elf >Final.objdump
 [Final build complete]

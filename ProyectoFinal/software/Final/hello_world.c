@@ -19,18 +19,52 @@
 
 Device                      Dir
 
-W training coefs.      0x100 - 0x14C
-b output offset           0x150
-In traning data           0x154
-Start Register            0x158
+W training coefs.      0x800 - 0x84C
+b output offset           0x850
+In traning data           0x854
+Start Register            0x858
 
 */
 #include <stdio.h>
+#include <stdint.h>
+#include <float.h>
 
-float x=1.1;
+/* Device pointers*/
+     /* Coefs*/
+int * w_ji=0x0800;
+int * w_kj=0x0828;
+    /* offset*/
+int * b=0x0850;
+/*   Training input   */
+int * training=0x0854;
+/*   Start register   */
+int * start = 0x858;
+/*   LSFR random */
+int * lsfr=0x1000;
+
+
+
 int main()
 {
-  printf("Hello from Nios II!\n %f", x);
+	int i;
+	*b=1;
+	float x= 100.123787;
+	unsigned int y = (int)x;
+	x=(x-y)*1000000;
+	y = (int)x;
+ printf("%d \n", y);
+
+
+  for (i=0;i<2*10*4;i=i+4){
+  	*(w_ji+i) = 5;
+  	}
+*b=1;
+printf("%d \n", *w_ji);
+
+
+ for (i=0;i<2*10*4;i=i+4){
+  	printf("%d \n", *(w_ji+i));
+  	}
 
   return 0;
 }

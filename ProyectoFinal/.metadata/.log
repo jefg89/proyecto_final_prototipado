@@ -353,3 +353,489 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.
 
 !ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 15:16:15.307
 !MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+!SESSION 2014-12-01 15:40:00.393 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_CR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 15:44:08.310
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 15:44:10.939
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=0x9030] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 15:44:10.954
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 15:44:13.734
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x9030, /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 15:44:13.737
+!MESSAGE Downloading ELF Process failed
+!SESSION 2014-12-01 15:44:46.221 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_CR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 15:45:06.486
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 15:45:09.097
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=0x9030] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 15:45:09.113
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 15:45:11.893
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x9030, /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 15:45:11.896
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 15:45:21.547
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 15:45:24.136
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=0x9030] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 15:45:24.151
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 15:45:26.960
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x9030, /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 15:45:26.961
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 15:46:31.505
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 15:46:33.105
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 15:48:09.257
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 15:48:10.666
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 15:48:13.271
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=0x9030] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 15:48:13.317
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 15:48:16.097
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x9030, /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 15:48:16.099
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 15:48:46.328
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 15:48:47.926
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:03:40.507
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:03:40.907
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:03:42.512
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:04:15.987
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:04:16.390
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:04:17.988
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 16:04:21.055
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x9030, /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf] return code: 134
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 16:04:21.060
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:04:27.325
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 16:04:29.916
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=0x9030] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:04:29.931
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 16:04:32.710
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x9030, /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 16:04:32.711
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:04:49.447
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 16:04:52.083
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=0x9030] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:04:52.097
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 16:04:54.354
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x9030, /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 16:04:54.356
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:05:28.913
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:05:30.527
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:06:23.971
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:06:24.377
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:06:25.985
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 16:06:29.307
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x9030, /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 16:06:29.308
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:06:56.005
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:06:57.610
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:07:32.512
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:07:32.940
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:07:34.556
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:08:10.000
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:08:10.404
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:08:12.014
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:08:44.275
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:08:44.706
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:08:46.314
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:09:08.620
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:09:09.033
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:09:10.647
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:11:46.704
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:11:47.106
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:11:48.714
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:11:57.968
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:11:58.368
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:11:59.971
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:13:08.582
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:13:08.984
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:13:10.604
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:21:39.384
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:21:39.799
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:21:41.409
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:21:59.834
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:22:00.244
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:22:01.855
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:22:58.597
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:22:59.004
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:23:00.609
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:23:19.084
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 16:27:53.822
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY org.eclipse.core.jobs 2 2 2014-12-01 16:27:54.597
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.debug.internal.ui.DebugUIPlugin$8
+!SESSION 2014-12-01 16:30:58.576 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_CR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 16:58:35.009
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 16:58:35.016
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 16:59:49.966
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 16:59:49.967
+!MESSAGE Unable to validate connection settings.
+!STACK 0
+java.lang.Exception
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.validateConnectionSettings(SystemConsoleConnectionModel.java:555)
+	at com.altera.sbtgui.launch.hardware.AbstractNios2CLaunchDelegate.launch(AbstractNios2CLaunchDelegate.java:115)
+	at com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchDelegate.launch(Nios2HardwareLaunchDelegate.java:98)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2014-12-01 17:00:14.943 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_CR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:00:49.264
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:00:50.866
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:02:41.267
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:02:41.674
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:02:43.271
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:06:09.476
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:06:09.886
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:06:11.487
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:06:25.169
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:06:25.568
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:06:27.169
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:15:33.725
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:15:34.129
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:15:35.730
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:15:53.738
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:15:54.139
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:15:55.734
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 17:15:58.743
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x9030, /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf] return code: 134
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-01 17:15:58.746
+!MESSAGE Downloading ELF Process failed
+!SESSION 2014-12-01 17:24:00.900 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_CR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:26:47.110
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:26:48.718
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:28:17.971
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:28:18.378
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:28:19.972
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:29:15.594
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:29:16.000
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:29:17.597
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:29:29.914
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:29:30.321
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:29:31.919
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:30:09.792
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:30:10.193
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:30:11.788
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:30:24.989
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:30:25.386
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:30:26.985
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:30:44.892
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:30:45.301
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:30:46.901
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:31:02.081
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:31:02.480
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:31:04.080
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:32:19.505
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:32:19.915
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:32:21.515
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:32:40.210
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:32:40.622
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x9030]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-01 17:32:42.219
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x9030 /cygdrive/c/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/Final.elf]
