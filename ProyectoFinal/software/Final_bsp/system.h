@@ -4,7 +4,7 @@
  * Machine generated for CPU 'NIOS_II' in SOPC Builder design 'SOC'
  * SOPC Builder design path: C:/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/SOC.sopcinfo
  *
- * Generated: Mon Dec 01 13:34:31 GMT-06:00 2014
+ * Generated: Mon Dec 01 14:58:03 GMT-06:00 2014
  */
 
 /*
@@ -250,7 +250,7 @@
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1417462355
+#define SYSID_QSYS_0_TIMESTAMP 1417464125
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 

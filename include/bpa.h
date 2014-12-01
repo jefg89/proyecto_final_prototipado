@@ -10,24 +10,25 @@
 Device                      Dir
 
 W training coefs.      0x100 - 0x14C
-b output offset           0x150
-In traning data           0x154
-Start Register            0x158
+b output offset           0x0150
+In traning data           0x0154
+Start Register            0x0158
+LSFR                      0x1000;
 
 */
 
 /* Device pointers*/
      /* Coefs*/
-int * w_ji=0x100;
-int * w_kj=0x128;
+int * w_ji=0x0100;
+int * w_kj=0x0128;
     /* offset*/
-int * b=0x150;
+int * b=0x0150;
 /*   Training input   */
-int * training=0x154;
-
+int * training=0x0154;
 /*   Start register   */
 int *start = 0x158:
-
+/*   LSFR random */
+int *lsfr=0x1000
 
 
 
@@ -76,7 +77,7 @@ int iter=0;
 
 srand ((unsigned) (time(0)));
 for (i=0;i<N_hidden;i++){
-	w_kj [i] =(float) (rand()) / (float) (RAND_MAX);
+	w_kj
 	for (j=0;j<N_in;j++) {
         w_ji [i][j]=(float) (rand()) / (float) (RAND_MAX);
 		}
