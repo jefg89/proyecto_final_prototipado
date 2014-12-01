@@ -16,9 +16,23 @@ Start Register            0x158
 
 */
 
+/* Device pointers*/
+     /* Coefs*/
+int * w_ji=0x100;
+int * w_kj=0x128;
+    /* offset*/
+int * b=0x150;
+/*   Training input   */
+int * training=0x154;
+
+/*   Start register   */
+int *start = 0x158:
+
+
+
 
 int N_hidden=10; /*number of hidden neurons in layer*/
-int N_in=0;  /*number of input variables*/
+int N_in=1;  /*number of input variables*/
 int N_iter=10; /*number of training iterations*/
 int N_dat=10;  /*number of training data*/
 
@@ -27,13 +41,15 @@ int actFunc=0;
 float eta=0.0; /*learning speed*/
 float *b;
 
-float * x_pi;
+
 float *y_pj; //hidden out
 float *y_pk; // output out
 float delta_pk; //output layer delta
 float * delta_pj; //hidden layer delta
+
+/*
 float **w_ji;
-float *w_kj;
+float *w_kj;   */
 
 
 /*N input - single output ANN*/ //replace with hardware
