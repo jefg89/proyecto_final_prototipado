@@ -73,7 +73,7 @@ int i = 0;
 int j=0;
 int iter=0;
 
-//------------ Initial random weights generation//
+//------------ Initial random weights generation// Ya está--------------°°!!!!!!!! :) :) :) :)
 
 srand ((unsigned) (time(0)));
 for (i=0;i<N_hidden;i++){
@@ -82,7 +82,7 @@ for (i=0;i<N_hidden;i++){
         w_ji [i][j]=(float) (rand()) / (float) (RAND_MAX);
 		}
 	}
-
+//------------------------------------------------------
 
 
 

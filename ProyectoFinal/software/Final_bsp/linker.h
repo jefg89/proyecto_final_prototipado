@@ -4,7 +4,7 @@
  * Machine generated for CPU 'NIOS_II' in SOPC Builder design 'SOC'
  * SOPC Builder design path: C:/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/SOC.sopcinfo
  *
- * Generated: Mon Dec 01 13:23:14 GMT-06:00 2014
+ * Generated: Mon Dec 01 18:50:36 GMT-06:00 2014
  */
 
 /*

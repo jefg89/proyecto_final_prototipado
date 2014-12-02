@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP2C20F484) Path("C:/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/output_files/") File("ProyectoFinal_time_limited.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C20F484) Path("C:/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/output_files/") File("ProyectoFinal.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

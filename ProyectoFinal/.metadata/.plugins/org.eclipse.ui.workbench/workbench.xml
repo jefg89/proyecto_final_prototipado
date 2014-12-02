@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="37" version="2.0">
+<workbench progressCount="35" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="64" y="64">
 <fastViewData fastViewLocation="16384"/>
@@ -30,17 +30,22 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="bpa.h" partName="bpa.h" title="bpa.h" tooltip="C:\Users\jgonzalez\Dropbox\proyecto_final_prototipado\include\bpa.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/Users/jgonzalez/Dropbox/proyecto_final_prototipado/include/bpa.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1346" selectionTopPixel="540"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2364" selectionTopPixel="1110"/>
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_world.c" partName="hello_world.c" path="C:/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final/hello_world.c" title="hello_world.c" tooltip="Final/hello_world.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Final/hello_world.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="912" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2427" selectionTopPixel="1050"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" partName="system.h" path="C:/Users/jgonzalez/Dropbox/proyecto_final_prototipado/ProyectoFinal/software/Final_bsp/system.h" title="system.h" tooltip="Final_bsp/system.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Final_bsp/system.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2116" selectionTopPixel="495"/>
 </editor>
 </editors>
 <views>
@@ -52,7 +57,9 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
+<category IMemento.internal.id="Warnings (10 items)"/>
+<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="120" org.eclipse.ui.ide.markerType="120" org.eclipse.ui.ide.pathField="160" org.eclipse.ui.ide.resourceField="120" org.eclipse.ui.ide.severityAndDescriptionField="400"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -282,6 +289,11 @@
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/D:/Proyecto3/software/Proyecto_3/hello_world.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Final/hello_world.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Final/hello_world.c"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/C:/Users/jgonzalez/Dropbox/proyecto_final_prototipado/include/bpa.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.binaryEditor" path="/Final/Final.elf"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Final_bsp/system.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Final_bsp/system.h"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/C:/Users/jgonzalez/Dropbox/proyecto_final_prototipado/include/bpa.h"/>
 </editors>
 <item historyLabel="bpa.h" index="0">
 <position info="not_deleted" x="260" y="0"/>
@@ -325,8 +337,104 @@
 <item historyLabel="bpa.h" index="2">
 <position info="not_deleted" x="463" y="0"/>
 </item>
-<item active="true" historyLabel="hello_world.c" index="5">
+<item historyLabel="hello_world.c" index="5">
 <position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="bpa.h" index="6">
+<position info="not_deleted" x="1346" y="0"/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position info="not_deleted" x="1449" y="0"/>
+</item>
+<item historyLabel="Final.elf" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position info="not_deleted" x="1449" y="0"/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position info="not_deleted" x="1567" y="0"/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position info="not_deleted" x="1758" y="0"/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position info="not_deleted" x="905" y="0"/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position info="not_deleted" x="1776" y="1"/>
+</item>
+<item historyLabel="system.h" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="system.h" index="8">
+<position info="not_deleted" x="2180" y="3"/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position info="not_deleted" x="2920" y="9"/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position info="not_deleted" x="1117" y="0"/>
+</item>
+<item historyLabel="system.h" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="system.h" index="9">
+<position info="not_deleted" x="2116" y="0"/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position info="not_deleted" x="1117" y="0"/>
+</item>
+<item historyLabel="bpa.h" index="10">
+<position info="not_deleted" x="1857" y="0"/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position/>
+</item>
+<item historyLabel="bpa.h" index="10">
+<position info="not_deleted" x="1967" y="632"/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position info="not_deleted" x="1705" y="5"/>
+</item>
+<item historyLabel="bpa.h" index="10">
+<position info="not_deleted" x="557" y="194"/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position info="not_deleted" x="2245" y="5"/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position info="not_deleted" x="1279" y="0"/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position info="not_deleted" x="1588" y="0"/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position info="not_deleted" x="1632" y="0"/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position info="not_deleted" x="2844" y="0"/>
+</item>
+<item historyLabel="hello_world.c" index="5">
+<position info="not_deleted" x="2636" y="0"/>
+</item>
+<item historyLabel="bpa.h" index="10">
+<position info="not_deleted" x="2364" y="0"/>
+</item>
+<item active="true" historyLabel="hello_world.c" index="5">
+<position info="not_deleted" x="2636" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -348,6 +456,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" tooltip="Final_bsp/system.h">
+<persistable path="/Final_bsp/system.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.binaryEditor" name="Final.elf" tooltip="Final/Final.elf">
+<persistable path="/Final/Final.elf"/>
+</file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_world.c" tooltip="D:\Proyecto3\software\Proyecto_3\hello_world.c">
 <persistable uri="file:/D:/Proyecto3/software/Proyecto_3/hello_world.c"/>
 </file>

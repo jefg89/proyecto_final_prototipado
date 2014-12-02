@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>01/12/2014 03:15:37 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1417468537598</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>01/12/2014 08:08:29 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1417486109033</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\jgonzalez\Dropbox\proyecto_final_prototipado\ProyectoFinal\software\Final_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\jgonzalez\Dropbox\proyecto_final_prototipado\ProyectoFinal\SOC.sopcinfo</SopcDesignFile>
@@ -862,6 +862,12 @@
                 <Enabled>false</Enabled>
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
+        <MemoryMap>
+                <slaveDescriptor>ANN_0</slaveDescriptor>
+                <addressRange>0x00000800 - 0x00000FFF</addressRange>
+                <addressSpan>2048</addressSpan>
+                <attributes/>
+        </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>Ifsr_0</slaveDescriptor>
                 <addressRange>0x00001000 - 0x00001003</addressRange>
