@@ -56,7 +56,7 @@ B30 = 30)
 	 // Instantiate the module
 	 FSMNeuronalNetwork FiniteStateMachine (
     .CLK(CLK),  //****************************** 
-    .reset(MasterReset),    //****************************** 
+    .reset(!MasterReset),    //****************************** 
     .Start(Start),            //******************************
     .Read(read),             //******************************
     .Address(address),       //******************************
