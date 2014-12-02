@@ -9,10 +9,10 @@
 
 Device                      Dir
 
-W training coefs.      0x800 - 0x84C
-b output offset           0x0850
-In traning data           0x0854
-Start Register            0x0858
+W training coefs.      0x100 - 0x14C
+b output offset           0x0150
+In traning data           0x0154
+Start Register            0x0158
 LSFR                      0x1000;
 
 */
@@ -75,15 +75,16 @@ int iter=0;
 
 //------------ Initial random weights generation//
 
-
-for (i=0;i<2*N_hidden*4;i=1+4){
-	*(w_ji+ix) = *lsfr;
+srand ((unsigned) (time(0)));
+for (i=0;i<N_hidden;i++){
+	w_kj
+	for (j=0;j<N_in;j++) {
+        w_ji [i][j]=(float) (rand()) / (float) (RAND_MAX);
+		}
 	}
 
 
-for (i=0;i<2*N_hidden*4;i=1+4){
-	*(w_ji+ix);
-	}
+
 
 
 *b=-1.72; //adjust bias manually.

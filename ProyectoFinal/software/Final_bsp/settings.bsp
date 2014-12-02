@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>01/12/2014 05:26:09 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1417476369361</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>01/12/2014 03:15:37 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1417468537598</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\jgonzalez\Dropbox\proyecto_final_prototipado\ProyectoFinal\software\Final_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\jgonzalez\Dropbox\proyecto_final_prototipado\ProyectoFinal\SOC.sopcinfo</SopcDesignFile>
@@ -314,7 +314,7 @@
                 <SettingName>hal.make.bsp_cflags_debug</SettingName>
                 <Identifier>BSP_CFLAGS_DEBUG</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>none</Value>
+                <Value>-g</Value>
                 <DefaultValue>-g</DefaultValue>
                 <DestinationFile>makefile_variable</DestinationFile>
                 <Description>C/C++ compiler debug level. '-g' provides the default set of debug symbols typically required to debug a typical application. Omitting '-g' removes debug symbols from the ELF. This setting defines the value of BSP_CFLAGS_DEBUG in Makefile.</Description>
@@ -386,7 +386,7 @@
                 <SettingName>hal.make.bsp_cflags_optimization</SettingName>
                 <Identifier>BSP_CFLAGS_OPTIMIZATION</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>-O1</Value>
+                <Value>-O0</Value>
                 <DefaultValue>-O0</DefaultValue>
                 <DestinationFile>makefile_variable</DestinationFile>
                 <Description>C/C++ compiler optimization level. "-O0" = no optimization,"-O2" = "normal" optimization, etc. "-O0" is recommended for code that you want to debug since compiler optimization can remove variables and produce non-sequential execution of code while debugging. This setting defines the value of BSP_CFLAGS_OPTIMIZATION in Makefile.</Description>
@@ -862,12 +862,6 @@
                 <Enabled>false</Enabled>
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
-        <MemoryMap>
-                <slaveDescriptor>ANN_0</slaveDescriptor>
-                <addressRange>0x00000800 - 0x00000FFF</addressRange>
-                <addressSpan>2048</addressSpan>
-                <attributes/>
-        </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>Ifsr_0</slaveDescriptor>
                 <addressRange>0x00001000 - 0x00001003</addressRange>

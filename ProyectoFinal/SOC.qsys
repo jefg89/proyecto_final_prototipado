@@ -12,14 +12,6 @@
    element $${FILENAME}
    {
    }
-   element ANN_0
-   {
-      datum _sortIndex
-      {
-         value = "7";
-         type = "int";
-      }
-   }
    element Ifsr_0
    {
       datum _sortIndex
@@ -60,14 +52,6 @@
          type = "String";
       }
    }
-   element ANN_0.avalon_slave_0
-   {
-      datum baseAddress
-      {
-         value = "2048";
-         type = "String";
-      }
-   }
    element clk_0
    {
       datum _sortIndex
@@ -100,19 +84,19 @@
          type = "int";
       }
    }
-   element RAM.s1
-   {
-      datum baseAddress
-      {
-         value = "16384";
-         type = "String";
-      }
-   }
    element timer_0.s1
    {
       datum baseAddress
       {
          value = "36864";
+         type = "String";
+      }
+   }
+   element RAM.s1
+   {
+      datum baseAddress
+      {
+         value = "16384";
          type = "String";
       }
    }
@@ -147,11 +131,7 @@
  <parameter name="projectName" value="ProyectoFinal.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
-<<<<<<< HEAD
- <parameter name="timeStamp" value="1417475900448" />
-=======
  <parameter name="timeStamp" value="1417468553071" />
->>>>>>> origin/master
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
@@ -289,8 +269,8 @@
   <parameter name="tightlyCoupledInstructionMaster1AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster2AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster3AddrWidth" value="1" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='ANN_0.avalon_slave_0' start='0x800' end='0x1000' /><slave name='Ifsr_0.avalon_slave_0' start='0x1000' end='0x1004' /><slave name='RAM.s1' start='0x4000' end='0x8000' /><slave name='NIOS_II.jtag_debug_module' start='0x8800' end='0x9000' /></address-map>]]></parameter>
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='ANN_0.avalon_slave_0' start='0x800' end='0x1000' /><slave name='Ifsr_0.avalon_slave_0' start='0x1000' end='0x1004' /><slave name='RAM.s1' start='0x4000' end='0x8000' /><slave name='NIOS_II.jtag_debug_module' start='0x8800' end='0x9000' /><slave name='timer_0.s1' start='0x9000' end='0x9020' /><slave name='sysid_qsys_0.control_slave' start='0x9030' end='0x9038' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9038' end='0x9040' /></address-map>]]></parameter>
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='Ifsr_0.avalon_slave_0' start='0x1000' end='0x1004' /><slave name='RAM.s1' start='0x4000' end='0x8000' /><slave name='NIOS_II.jtag_debug_module' start='0x8800' end='0x9000' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='Ifsr_0.avalon_slave_0' start='0x1000' end='0x1004' /><slave name='RAM.s1' start='0x4000' end='0x8000' /><slave name='NIOS_II.jtag_debug_module' start='0x8800' end='0x9000' /><slave name='timer_0.s1' start='0x9000' end='0x9020' /><slave name='sysid_qsys_0.control_slave' start='0x9030' end='0x9038' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x9038' end='0x9040' /></address-map>]]></parameter>
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="deviceFamilyName" value="Cyclone II" />
   <parameter name="internalIrqMaskSystemInfo" value="65537" />
@@ -349,104 +329,6 @@
   <parameter name="systemFrequency" value="50000000" />
  </module>
  <module kind="Ifsr" version="1.0" enabled="1" name="Ifsr_0">
-  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="50000000" />
- </module>
- <module kind="ANN" version="1.0" enabled="1" name="ANN_0">
-  <parameter name="Width" value="32" />
-  <parameter name="Magnitud" value="7" />
-  <parameter name="Precision" value="24" />
-  <parameter name="Signo" value="1" />
-  <parameter name="A00" value="0" />
-  <parameter name="A01" value="1" />
-  <parameter name="A02" value="2" />
-  <parameter name="A03" value="3" />
-  <parameter name="A04" value="4" />
-  <parameter name="A05" value="5" />
-  <parameter name="A06" value="6" />
-  <parameter name="A07" value="7" />
-  <parameter name="A08" value="8" />
-  <parameter name="A09" value="9" />
-  <parameter name="A10" value="10" />
-  <parameter name="A11" value="11" />
-  <parameter name="A12" value="12" />
-  <parameter name="A13" value="13" />
-  <parameter name="A14" value="14" />
-  <parameter name="A15" value="15" />
-  <parameter name="A16" value="16" />
-  <parameter name="A17" value="17" />
-  <parameter name="A18" value="18" />
-  <parameter name="A19" value="19" />
-  <parameter name="A20" value="20" />
-  <parameter name="A21" value="21" />
-  <parameter name="A22" value="22" />
-  <parameter name="A23" value="23" />
-  <parameter name="A24" value="24" />
-  <parameter name="A25" value="25" />
-  <parameter name="A26" value="26" />
-  <parameter name="A27" value="27" />
-  <parameter name="A28" value="28" />
-  <parameter name="A29" value="29" />
-  <parameter name="A30" value="30" />
-  <parameter name="M01" value="1" />
-  <parameter name="M02" value="2" />
-  <parameter name="M03" value="3" />
-  <parameter name="M04" value="4" />
-  <parameter name="M05" value="5" />
-  <parameter name="M06" value="6" />
-  <parameter name="M07" value="7" />
-  <parameter name="M08" value="8" />
-  <parameter name="M09" value="9" />
-  <parameter name="M10" value="10" />
-  <parameter name="M11" value="11" />
-  <parameter name="M12" value="12" />
-  <parameter name="M13" value="13" />
-  <parameter name="M14" value="14" />
-  <parameter name="M15" value="15" />
-  <parameter name="M16" value="16" />
-  <parameter name="M17" value="17" />
-  <parameter name="M18" value="18" />
-  <parameter name="M19" value="19" />
-  <parameter name="M20" value="20" />
-  <parameter name="M21" value="21" />
-  <parameter name="M22" value="22" />
-  <parameter name="M23" value="23" />
-  <parameter name="M24" value="24" />
-  <parameter name="M25" value="25" />
-  <parameter name="M26" value="26" />
-  <parameter name="M27" value="27" />
-  <parameter name="M28" value="28" />
-  <parameter name="M29" value="29" />
-  <parameter name="M30" value="30" />
-  <parameter name="B01" value="1" />
-  <parameter name="B02" value="2" />
-  <parameter name="B03" value="3" />
-  <parameter name="B04" value="4" />
-  <parameter name="B05" value="5" />
-  <parameter name="B06" value="6" />
-  <parameter name="B07" value="7" />
-  <parameter name="B08" value="8" />
-  <parameter name="B09" value="9" />
-  <parameter name="B10" value="10" />
-  <parameter name="B11" value="11" />
-  <parameter name="B12" value="12" />
-  <parameter name="B13" value="13" />
-  <parameter name="B14" value="14" />
-  <parameter name="B15" value="15" />
-  <parameter name="B16" value="16" />
-  <parameter name="B17" value="17" />
-  <parameter name="B18" value="18" />
-  <parameter name="B19" value="19" />
-  <parameter name="B20" value="20" />
-  <parameter name="B21" value="21" />
-  <parameter name="B22" value="22" />
-  <parameter name="B23" value="23" />
-  <parameter name="B24" value="24" />
-  <parameter name="B25" value="25" />
-  <parameter name="B26" value="26" />
-  <parameter name="B27" value="27" />
-  <parameter name="B28" value="28" />
-  <parameter name="B29" value="29" />
-  <parameter name="B30" value="30" />
   <parameter name="AUTO_CLOCK_CLOCK_RATE" value="50000000" />
  </module>
  <connection
@@ -570,30 +452,6 @@
    end="Ifsr_0.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x1000" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection kind="clock" version="13.0" start="clk_0.clk" end="ANN_0.clock" />
- <connection
-   kind="reset"
-   version="13.0"
-   start="clk_0.clk_reset"
-   end="ANN_0.reset_sink" />
- <connection
-   kind="avalon"
-   version="13.0"
-   start="NIOS_II.data_master"
-   end="ANN_0.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0800" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="13.0"
-   start="NIOS_II.instruction_master"
-   end="ANN_0.avalon_slave_0">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0800" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
