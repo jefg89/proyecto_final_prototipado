@@ -57,7 +57,7 @@ module FSMNeuralNetwork(CLK, reset,Start,Read,Address,ResetInterfaz,ResetStart,R
 	 S11=5'd11, S12=5'd12, S13=5'd13, S14=5'd14, S15=5'd15, S16=5'd16, S17=5'd17, S18=5'd18, S19=5'd19, S20=5'd20,
 	 S21=5'd21, S22=5'd22, S23=5'd23, S24=5'd24, S25=5'd25, S26=5'd26, S27=5'd27, S28=5'd28, S29=5'd29, S30=5'd30,
 	 S31=5'd31, RESETEADOR=5'd00;
-	 //******************************** FIN DE DECLARACIï¿½N DE REGISTROS Y PAMAMETROS MAQUIINA DE ESTADOS***********************************
+	 //******************************** FIN DE DECLARACIÓN DE REGISTROS Y PAMAMETROS MAQUIINA DE ESTADOS***********************************
 	 
 	  // *********************Registro de estado *********************************************************
 	 always @(posedge CLK) begin //or posedge reset) begin
@@ -69,7 +69,7 @@ module FSMNeuralNetwork(CLK, reset,Start,Read,Address,ResetInterfaz,ResetStart,R
 		end 
 	 end
 	 
-	 // Lï¿½gica combinacional de estado siguiente ************************************
+	 // Lógica combinacional de estado siguiente ************************************
 	always @*
 		begin
 			case(State)
@@ -124,11 +124,11 @@ module FSMNeuralNetwork(CLK, reset,Start,Read,Address,ResetInterfaz,ResetStart,R
 					NextState <= S16;
 				end
 				S16: begin  // **********EnableMultX = 0 and EnableRegOutMultCoeffX = 0 SELCoeffX= 00, EnableFuctAct=0, EnableRegFuctAct=0, SELCoeffY =00, EnableMultY=0,EnableSum=0,EnableRegDesplazamientro=0,SELOffset =0, Enable Acum=0, Listo = 1
-					if(Address==9'h000 && Read == 1'b1) NextState <= 17; // Direccion de memoria donde se hace la ultima lectura
+					if(Address==9'h050 && Read == 1'b1) NextState <= 17; // Direccion de memoria donde se hace la ultima lectura
 					else NextState <= S16;
 				end
 				S17: begin   // **********EnableMultX = 0 and EnableRegOutMultCoeffX = 0 SELCoeffX= 00, EnableFuctAct=0, EnableRegFuctAct=0, SELCoeffY =00, EnableMultY=0,EnableSum=0,EnableRegDesplazamientro=0,SELOffset =0, Enable Acum=0, Listo = 1
-					if(Address==9'h000 && Read == 1'b1) NextState <= S17; // Direccion de memoria donde se hace la ultima lectura
+					if(Address==9'h050 && Read == 1'b1) NextState <= S17; // Direccion de memoria donde se hace la ultima lectura
 					else NextState <= S18;
 				end  
 				S18: begin   // Estado de resetea todos los registros excepto el resetInterfaz
