@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module FuncionActivacion #(parameter Width = 32, Magnitud = 7, Precision = 24, Signo = 1, A00= 0, 
+module FuncionActivacion #(parameter Width = 32, ConLimitador=0,Magnitud = 7, Precision = 24, Signo = 1, A00= 0, 
 A01= 1, A02 = 2, A03 = 3, A04 = 4, A05 = 5, A06 = 6, A07 = 7, A08 = 8, A09 = 9,
 A10= 10, A11= 11, A12 = 12, A13 = 13, A14 = 14, A15 = 15, A16 = 16, A17 = 17, A18 = 18, A19 = 19,
 A20= 20, A21= 21,A22 = 22, A23 = 23, A24 = 24, A25 = 25, A26 = 26, A27 = 27, A28 = 28, A29 = 29, 
@@ -39,7 +39,7 @@ B30 = 30)
 	 output signed [Width-1:0] Salida;
 	 
 	 wire [4:0] SELMUX;
-	 wire signed [Width-1:0] M,B;
+	 wire signed [Width-1:0] M,B,OutALU;
 	 
 	 Comparador #( .Width(Width) , .A00(A00), .A01(A01),.A02(A02), .A03(A03), .A04(A04), .A05(A05), 
 	 .A06(A06), .A07(A07), .A08(A08), .A09(A09),.A10(A10), .A11(A11), .A12(A12), .A13(A13), .A14(A14), 
@@ -52,7 +52,7 @@ B30 = 30)
 	 
 	 
 	 multiplexor32a1 #(.Width(Width)) multiplexor32a1coeffPendientes (
-    .coeff00(0), 
+    .coeff00(32'sb00000000000000000000000000000000), 
     .coeff01(M01), 
     .coeff02(M02), 
     .coeff03(M03), 
@@ -83,13 +83,13 @@ B30 = 30)
     .coeff28(M28), 
     .coeff29(M29), 
     .coeff30(M30), 
-    .coeff31(0), 
+    .coeff31(32'sb00000000000000000000000000000000), 
     .SEL(SELMUX), 
     .outMUX(M)
     );
 	 
 	 multiplexor32a1 #(.Width(Width)) multiplexor32a1coeffInterseccion (
-    .coeff00(0), 
+    .coeff00(32'sb00000000000000000000000000000000), 
     .coeff01(B01), 
     .coeff02(B02), 
     .coeff03(B03), 
@@ -120,7 +120,7 @@ B30 = 30)
     .coeff28(B28), 
     .coeff29(B29), 
     .coeff30(B30), 
-    .coeff31(0), 
+    .coeff31(32'sb00000001000000000000000000000000), 
     .SEL(SELMUX), 
     .outMUX(B)
     );
@@ -133,9 +133,22 @@ B30 = 30)
     .M(M), 
     .B(B), 
     .In(Entrada), 
-    .Out(Salida), 
+    .Out(OutALU), 
     .Error(Error)
     );
+	 
+	 
+	 
+	 generate
+      if (ConLimitador) begin: CodigoConLimitadoralaSalidaEntre0y1
+         LimitadorSalidaFuctActivacion  #(.Width(Width)) LimitadorSalidaFuctActivacion1 (
+			.inData(OutALU), 
+			.OutData(Salida)
+			);
+      end else begin: CodigoSinLimitadoralaSalidaEntre0y1
+         assign Salida = OutALU; 
+      end
+   endgenerate
 
 
 

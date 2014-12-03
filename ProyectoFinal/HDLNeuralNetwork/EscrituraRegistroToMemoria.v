@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    08:23:59 11/30/2014 
+// Create Date:    20:07:02 12/01/2014 
 // Design Name: 
-// Module Name:    EscrituraRegistroToMemoria 
+// Module Name:    EscrituraRegistroToMemoriaPrueba 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -15,14 +15,13 @@
 //
 // Revision: 
 // Revision 0.01 - File Created
-// Additional Comments:  Este modulo Si en la direcciï¿½n de listo escribe un 1 en decimal,
-// significa que el dato ya esta listo, Ahora si en la direcciï¿½n del error se escribe un 1,
-// significa que si hubo un overflow en algï¿½n punto durante el proceso.
+// Additional Comments: 
+//
 //////////////////////////////////////////////////////////////////////////////////
-module EscrituraRegistroToMemoria #(parameter Width = 24)
+module EscrituraRegistroToMemoria#(parameter Width = 4)
 (Read,InError,Address,ListoIn,InDato,Coeff00,Coeff01,Coeff02,Coeff03,Coeff04,Coeff05,
 Coeff06,Coeff07,Coeff08,Coeff09,Coeff10,Coeff11,Coeff12,Coeff13,Coeff14,Coeff15,Coeff16,Coeff17,Coeff18,
-Coeff19,Offset,DatoEntradaSistema,OutDato);
+Coeff19,Offset,DatoEntradaSistema,Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7,Y8,Y9,OutDato);
 	 
 	// InDato es la salida de la red Neuronal
 	// DatoEntradaSistema es el dato con el que se obtuvo una salida igual a InDato  =>  InDato = f(DatoEntradaSistema)
@@ -30,15 +29,15 @@ Coeff19,Offset,DatoEntradaSistema,OutDato);
    input [8:0] Address; 
 	input signed [Width-1:0] InDato,Coeff00,Coeff01,Coeff02,Coeff03,Coeff04,Coeff05,
    Coeff06,Coeff07,Coeff08,Coeff09,Coeff10,Coeff11,Coeff12,Coeff13,Coeff14,Coeff15,Coeff16,
-	Coeff17,Coeff18,Coeff19,Offset,DatoEntradaSistema;
+	Coeff17,Coeff18,Coeff19,Offset,DatoEntradaSistema,Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7,Y8,Y9;
 	
 	output reg signed [Width-1:0] OutDato;
 
 	always @*begin // Se escribe el dato en memoria
 		if(Read) begin
-			if(Address==9'h000 && ListoIn==1'b1) begin  // Direcciï¿½n de Indicador Dato Listo
+			if(Address==9'h000 && ListoIn==1'b1) begin  // Dirección de Indicador Dato Listo
 				OutDato <= 1;
-			end else if(Address==9'h004 ) begin  // Direcciï¿½n del Dato Listo
+			end else if(Address==9'h004 ) begin  // Dirección del Dato Listo
 				OutDato <= InDato;
 			end else if(Address==9'h008 && InError==1'b1) begin   // Dato Indicandor de error
 			   OutDato <= 1;
@@ -86,6 +85,26 @@ Coeff19,Offset,DatoEntradaSistema,OutDato);
 				OutDato <= Offset;
 			end else if(Address==9'h060 ) begin   // EntradadelSistema
 				OutDato <= DatoEntradaSistema;
+			end else if(Address==9'h064 ) begin   // EntradadelSistema
+				OutDato <= Y0;
+			end else if(Address==9'h068 ) begin   // EntradadelSistema
+				OutDato <= Y1;
+			end else if(Address==9'h06C ) begin   // EntradadelSistema
+				OutDato <= Y2;
+			end else if(Address==9'h070 ) begin   // EntradadelSistema
+				OutDato <= Y3;
+			end else if(Address==9'h074 ) begin   // EntradadelSistema
+				OutDato <= Y4;
+			end else if(Address==9'h078 ) begin   // EntradadelSistema
+				OutDato <= Y5;
+			end else if(Address==9'h07C ) begin   // EntradadelSistema
+				OutDato <= Y6;
+			end else if(Address==9'h080 ) begin   // EntradadelSistema
+				OutDato <= Y7;
+			end else if(Address==9'h084 ) begin   // EntradadelSistema
+				OutDato <= Y8;
+			end else if(Address==9'h088 ) begin   // EntradadelSistema
+				OutDato <= Y9;	
 			end else begin
 				OutDato <= 0;
 			end
@@ -95,3 +114,4 @@ Coeff19,Offset,DatoEntradaSistema,OutDato);
 		end
 	end
 endmodule
+

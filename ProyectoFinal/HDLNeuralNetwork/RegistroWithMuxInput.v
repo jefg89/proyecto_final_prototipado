@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    22:45:36 11/28/2014 
+// Create Date:    17:45:25 12/01/2014 
 // Design Name: 
-// Module Name:    RegistroWithMuxInput 
+// Module Name:    RegistroWithMuxInputBorrar 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -19,16 +19,18 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module RegistroWithMuxInput#(parameter Width = 4)
-(CLK,EnableRegisterIn,reset,SEL,Coeff00,Coeff01,Coeff02,Coeff03,Coeff04,Coeff05,Coeff06,Coeff07,Coeff08,Coeff09,
-Coeff10,Coeff11,Coeff12,Coeff13,Coeff14,Coeff15,Coeff16,Coeff17,Coeff18,Coeff19,Offset,OutCoeff);
+(CLK,EnableRegisterIn,reset,SELCoeffX,SELCoeffY,Coeff00,Coeff01,Coeff02,Coeff03,Coeff04,Coeff05,Coeff06,Coeff07,Coeff08,Coeff09,
+Coeff10,Coeff11,Coeff12,Coeff13,Coeff14,Coeff15,Coeff16,Coeff17,Coeff18,Coeff19,OffsetIn,OutCoeffX,OutCoeffY,OffsetOut);
 
 	input signed [Width-1:0] Coeff00,Coeff01,Coeff02,Coeff03,Coeff04,Coeff05,Coeff06,Coeff07,Coeff08,
-	Coeff09,Coeff10,Coeff11,Coeff12,Coeff13,Coeff14,Coeff15,Coeff16,Coeff17,Coeff18,Coeff19,Offset;
+	Coeff09,Coeff10,Coeff11,Coeff12,Coeff13,Coeff14,Coeff15,Coeff16,Coeff17,Coeff18,Coeff19,OffsetIn;
 	
 	input CLK,EnableRegisterIn,reset;
-	input [4:0] SEL;
+	input [3:0] SELCoeffX,SELCoeffY;
 	
-	output reg signed [Width-1:0] OutCoeff = 0;
+	output reg signed [Width-1:0] OutCoeffX = 0;
+	output reg signed [Width-1:0] OutCoeffY = 0;  //OffsetOut
+	output signed [Width-1:0] OffsetOut;
 	
 	reg signed [Width-1:0] AuxCoeff00,AuxCoeff01,AuxCoeff02,AuxCoeff03,AuxCoeff04,AuxCoeff05,AuxCoeff06,
 	AuxCoeff07,AuxCoeff08,AuxCoeff09,AuxCoeff10,AuxCoeff11,AuxCoeff12,AuxCoeff13,AuxCoeff14,AuxCoeff15,AuxCoeff16,
@@ -78,36 +80,43 @@ Coeff10,Coeff11,Coeff12,Coeff13,Coeff14,Coeff15,Coeff16,Coeff17,Coeff18,Coeff19,
 		  AuxCoeff17 <= Coeff17;
 		  AuxCoeff18 <= Coeff18;
 		  AuxCoeff19 <= Coeff19;
-		  AuxCoeff20 <= Offset;
+		  AuxCoeff20 <= OffsetIn;
 	  end
 	  
-	  always @(SEL, AuxCoeff00,AuxCoeff01,AuxCoeff02,AuxCoeff03,AuxCoeff04,AuxCoeff05,AuxCoeff06,
-		AuxCoeff07,AuxCoeff08,AuxCoeff09,AuxCoeff10,AuxCoeff11,AuxCoeff12,AuxCoeff13,AuxCoeff14,
-		AuxCoeff15,AuxCoeff16,AuxCoeff17,AuxCoeff18,AuxCoeff19,AuxCoeff20)
-      case (SEL)
-         5'd00: OutCoeff <= AuxCoeff00;
-         5'd01: OutCoeff <= AuxCoeff01;
-         5'd02: OutCoeff <= AuxCoeff02;
-         5'd03: OutCoeff <= AuxCoeff03;
-         5'd04: OutCoeff <= AuxCoeff04;
-         5'd05: OutCoeff <= AuxCoeff05;
-         5'd06: OutCoeff <= AuxCoeff06;
-         5'd07: OutCoeff <= AuxCoeff07;
-			5'd08: OutCoeff <= AuxCoeff08;
-         5'd09: OutCoeff <= AuxCoeff09;	
-			5'd10: OutCoeff <= AuxCoeff10;
-         5'd11: OutCoeff <= AuxCoeff11;
-         5'd12: OutCoeff <= AuxCoeff12;
-         5'd13: OutCoeff <= AuxCoeff13;
-         5'd14: OutCoeff <= AuxCoeff14;
-         5'd15: OutCoeff <= AuxCoeff15;
-         5'd16: OutCoeff <= AuxCoeff16;
-         5'd17: OutCoeff <= AuxCoeff17;
-			5'd18: OutCoeff <= AuxCoeff18;
-         5'd19: OutCoeff <= AuxCoeff19;
-			5'd20: OutCoeff <= AuxCoeff20;
-			default : OutCoeff <= 0;
+	  assign OffsetOut = AuxCoeff20;
+	  
+	  always @(SELCoeffX, AuxCoeff00,AuxCoeff01,AuxCoeff02,AuxCoeff03,AuxCoeff04,AuxCoeff05,AuxCoeff06,
+		AuxCoeff07,AuxCoeff08,AuxCoeff09)
+      case (SELCoeffX)
+         5'd00: OutCoeffX <= AuxCoeff00;
+         5'd01: OutCoeffX <= AuxCoeff01;
+         5'd02: OutCoeffX <= AuxCoeff02;
+         5'd03: OutCoeffX <= AuxCoeff03;
+         5'd04: OutCoeffX <= AuxCoeff04;
+         5'd05: OutCoeffX <= AuxCoeff05;
+         5'd06: OutCoeffX <= AuxCoeff06;
+         5'd07: OutCoeffX <= AuxCoeff07;
+			5'd08: OutCoeffX <= AuxCoeff08;
+         5'd09: OutCoeffX <= AuxCoeff09;	
+			default : OutCoeffX <= 0;
+      endcase
+		
+		always @(SELCoeffY,AuxCoeff10,AuxCoeff11,AuxCoeff12,AuxCoeff13,AuxCoeff14,AuxCoeff15,AuxCoeff16,
+		AuxCoeff17,AuxCoeff18,AuxCoeff19)
+      case (SELCoeffY)
+         5'd00: OutCoeffY <= AuxCoeff10;
+         5'd01: OutCoeffY <= AuxCoeff11;
+         5'd02: OutCoeffY <= AuxCoeff12;
+         5'd03: OutCoeffY <= AuxCoeff13;
+         5'd04: OutCoeffY <= AuxCoeff14;
+         5'd05: OutCoeffY <= AuxCoeff15;
+         5'd06: OutCoeffY <= AuxCoeff16;
+         5'd07: OutCoeffY <= AuxCoeff17;
+			5'd08: OutCoeffY <= AuxCoeff18;
+         5'd09: OutCoeffY <= AuxCoeff19;	
+			default : OutCoeffY <= 0;
       endcase
 
 
 endmodule
+
