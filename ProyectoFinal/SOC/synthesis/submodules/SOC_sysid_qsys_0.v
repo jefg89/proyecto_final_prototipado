@@ -18,7 +18,7 @@
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module SOC_sysid_qsys_0 (
+module SoC_sysid_qsys_0 (
                // inputs:
                 address,
                 clock,
@@ -36,7 +36,7 @@ module SOC_sysid_qsys_0 (
 
   wire    [ 31: 0] readdata;
   //control_slave, which is an e_avalon_slave
-  assign readdata = address ? 1417485996 : 0;
+  assign readdata = address ? 1417708661 : 0;
 
 endmodule
 

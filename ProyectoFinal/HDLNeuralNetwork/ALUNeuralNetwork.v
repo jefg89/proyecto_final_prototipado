@@ -121,12 +121,14 @@ Coeff19,Offset,Error,OutDato,Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7,Y8,Y9);
     .Error(Error2),                   //************************************
     .Salida(OutActFunct)              //************************************
     );
+
+	 //assign OutActFunct=OutRegisterMultCoeffX;  // Borrar
 	 
 	 Registro #(.Width(Width)) RegistroOutActFunct (
     .CLK(CLK),                        //************************************
     .reset(reset),                    //************************************
     .Enable(EnableRegActFunc),         //************************************
-    .Entrada(OutActFunct),              //************************************
+    .Entrada(OutActFunct),  //OutActFunct            //************************************
     .Salida(OutRegActFunct)             //************************************
     );
 	 

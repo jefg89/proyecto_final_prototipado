@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="testCyclone4">
+		<CBX_INST_ENTRY INSTANCE_NAME="|testCyclone4|SoC:u0|SoC_NIOS:nios|SoC_NIOS_ic_data_module:SoC_NIOS_ic_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_6nd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|testCyclone4|SoC:u0|SoC_NIOS:nios|SoC_NIOS_ic_tag_module:SoC_NIOS_ic_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_5qg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|testCyclone4|SoC:u0|SoC_NIOS:nios|SoC_NIOS_mult_cell:the_SoC_NIOS_mult_cell|altera_mult_add:the_altmult_add_part_2|altera_mult_add_g9u2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_d411.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|testCyclone4|SoC:u0|SoC_NIOS:nios|SoC_NIOS_nios2_oci:the_SoC_NIOS_nios2_oci|SoC_NIOS_nios2_ocimem:the_SoC_NIOS_nios2_ocimem|SoC_NIOS_ociram_sp_ram_module:SoC_NIOS_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_lc71.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|testCyclone4|SoC:u0|SoC_NIOS:nios|SoC_NIOS_register_bank_b_module:SoC_NIOS_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_5gg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|testCyclone4|SoC:u0|MainProyectoFinal:hw_ann_0|ALUNeuralNetwork:ALUNeuralNetworkCopia|FuncionActivacion:FuncionActivacionSigmoidal|ALUfuncionActivacion:ALUfuncionActivacioncopia|multiplicadorPuntoFijo:multiplicadorPuntoFijoCopia1|lpm_mult:Mult0" CBX_FILE_NAME="mult_v9t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|testCyclone4|SoC:u0|MainProyectoFinal:hw_ann_0|ALUNeuralNetwork:ALUNeuralNetworkCopia|multiplicadorPuntoFijo:multiplicadorPuntoFijoCoeficienteX|lpm_mult:Mult0" CBX_FILE_NAME="mult_u9t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|testCyclone4|SoC:u0|SoC_NIOS:nios|SoC_NIOS_mult_cell:the_SoC_NIOS_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_e9u2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_dt01.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|testCyclone4|SoC:u0|SoC_RAM:ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_glb1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|testCyclone4|SoC:u0|SoC_NIOS:nios|SoC_NIOS_mult_cell:the_SoC_NIOS_mult_cell|altera_mult_add:the_altmult_add_part_1" CBX_FILE_NAME="altera_mult_add_e9u2.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|testCyclone4|SoC:u0|SoC_NIOS:nios|SoC_NIOS_register_bank_a_module:SoC_NIOS_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_4gg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|testCyclone4|SoC:u0|SoC_NIOS:nios|lpm_add_sub:Add8" CBX_FILE_NAME="add_sub_k3j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|testCyclone4|SoC:u0|SoC_jtag_uart_0:jtag_uart_0|SoC_jtag_uart_0_scfifo_w:the_SoC_jtag_uart_0_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_dv21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|testCyclone4|SoC:u0|MainProyectoFinal:hw_ann_0|ALUNeuralNetwork:ALUNeuralNetworkCopia|multiplicadorPuntoFijo:multiplicadorPuntoFijoCoeffY|lpm_mult:Mult0" CBX_FILE_NAME="mult_u9t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|testCyclone4|SoC:u0|SoC_NIOS:nios|SoC_NIOS_mult_cell:the_SoC_NIOS_mult_cell|altera_mult_add:the_altmult_add_part_2" CBX_FILE_NAME="altera_mult_add_g9u2.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|testCyclone4|SoC:u0|SoC_jtag_uart_0:jtag_uart_0|SoC_jtag_uart_0_scfifo_r:the_SoC_jtag_uart_0_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_dv21.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

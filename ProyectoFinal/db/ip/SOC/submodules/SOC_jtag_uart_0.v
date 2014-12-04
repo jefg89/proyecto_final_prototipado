@@ -18,7 +18,7 @@
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module SOC_jtag_uart_0_sim_scfifo_w (
+module SoC_jtag_uart_0_sim_scfifo_w (
                                       // inputs:
                                        clk,
                                        fifo_wdata,
@@ -74,7 +74,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module SOC_jtag_uart_0_scfifo_w (
+module SoC_jtag_uart_0_scfifo_w (
                                   // inputs:
                                    clk,
                                    fifo_clear,
@@ -107,7 +107,7 @@ module SOC_jtag_uart_0_scfifo_w (
 
 //synthesis translate_off
 //////////////// SIMULATION-ONLY CONTENTS
-  SOC_jtag_uart_0_sim_scfifo_w the_SOC_jtag_uart_0_sim_scfifo_w
+  SoC_jtag_uart_0_sim_scfifo_w the_SoC_jtag_uart_0_sim_scfifo_w
     (
       .clk         (clk),
       .fifo_FF     (fifo_FF),
@@ -159,7 +159,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module SOC_jtag_uart_0_sim_scfifo_r (
+module SoC_jtag_uart_0_sim_scfifo_r (
                                       // inputs:
                                        clk,
                                        fifo_rd,
@@ -237,7 +237,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module SOC_jtag_uart_0_scfifo_r (
+module SoC_jtag_uart_0_scfifo_r (
                                   // inputs:
                                    clk,
                                    fifo_clear,
@@ -272,7 +272,7 @@ module SOC_jtag_uart_0_scfifo_r (
 
 //synthesis translate_off
 //////////////// SIMULATION-ONLY CONTENTS
-  SOC_jtag_uart_0_sim_scfifo_r the_SOC_jtag_uart_0_sim_scfifo_r
+  SoC_jtag_uart_0_sim_scfifo_r the_SoC_jtag_uart_0_sim_scfifo_r
     (
       .clk        (clk),
       .fifo_EF    (fifo_EF),
@@ -324,7 +324,7 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
-module SOC_jtag_uart_0 (
+module SoC_jtag_uart_0 (
                          // inputs:
                           av_address,
                           av_chipselect,
@@ -401,7 +401,7 @@ module SOC_jtag_uart_0 (
   assign rd_wfifo = r_ena & ~wfifo_empty;
   assign wr_rfifo = t_ena & ~rfifo_full;
   assign fifo_clear = ~rst_n;
-  SOC_jtag_uart_0_scfifo_w the_SOC_jtag_uart_0_scfifo_w
+  SoC_jtag_uart_0_scfifo_w the_SoC_jtag_uart_0_scfifo_w
     (
       .clk         (clk),
       .fifo_FF     (fifo_FF),
@@ -414,7 +414,7 @@ module SOC_jtag_uart_0 (
       .wfifo_used  (wfifo_used)
     );
 
-  SOC_jtag_uart_0_scfifo_r the_SOC_jtag_uart_0_scfifo_r
+  SoC_jtag_uart_0_scfifo_r the_SoC_jtag_uart_0_scfifo_r
     (
       .clk        (clk),
       .fifo_EF    (fifo_EF),
@@ -550,7 +550,7 @@ module SOC_jtag_uart_0 (
 
 //synthesis translate_on
 //synthesis read_comments_as_HDL on
-//  alt_jtag_atlantic SOC_jtag_uart_0_alt_jtag_atlantic
+//  alt_jtag_atlantic SoC_jtag_uart_0_alt_jtag_atlantic
 //    (
 //      .clk (clk),
 //      .r_dat (r_dat),
@@ -563,10 +563,10 @@ module SOC_jtag_uart_0 (
 //      .t_pause (t_pause)
 //    );
 //
-//  defparam SOC_jtag_uart_0_alt_jtag_atlantic.INSTANCE_ID = 0,
-//           SOC_jtag_uart_0_alt_jtag_atlantic.LOG2_RXFIFO_DEPTH = 6,
-//           SOC_jtag_uart_0_alt_jtag_atlantic.LOG2_TXFIFO_DEPTH = 6,
-//           SOC_jtag_uart_0_alt_jtag_atlantic.SLD_AUTO_INSTANCE_INDEX = "YES";
+//  defparam SoC_jtag_uart_0_alt_jtag_atlantic.INSTANCE_ID = 0,
+//           SoC_jtag_uart_0_alt_jtag_atlantic.LOG2_RXFIFO_DEPTH = 6,
+//           SoC_jtag_uart_0_alt_jtag_atlantic.LOG2_TXFIFO_DEPTH = 6,
+//           SoC_jtag_uart_0_alt_jtag_atlantic.SLD_AUTO_INSTANCE_INDEX = "YES";
 //
 //  always @(posedge clk or negedge rst_n)
 //    begin

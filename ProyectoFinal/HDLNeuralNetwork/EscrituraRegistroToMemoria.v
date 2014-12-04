@@ -35,10 +35,10 @@ Coeff19,Offset,DatoEntradaSistema,Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7,Y8,Y9,OutDato);
 
 	always @*begin // Se escribe el dato en memoria
 		if(Read) begin
-			if(Address==9'h000 && ListoIn==1'b1) begin  // Dirección de Indicador Dato Listo
-				OutDato <= 1;
-			end else if(Address==9'h004 ) begin  // Dirección del Dato Listo
-				OutDato <= InDato;
+			if(Address==9'h000 && ListoIn==1'b1) begin  // Direcciï¿½n de Indicador Dato Listo
+				OutDato <= 1; 
+			end else if(Address==9'h004 ) begin  // Direcciï¿½n del Dato Listo
+				OutDato <= InDato; 
 			end else if(Address==9'h008 && InError==1'b1) begin   // Dato Indicandor de error
 			   OutDato <= 1;
 			end else if(Address==9'h00C ) begin   // CoeffEntrenamiento0

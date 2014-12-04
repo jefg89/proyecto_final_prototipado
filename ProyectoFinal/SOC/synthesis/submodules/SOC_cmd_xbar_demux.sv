@@ -27,10 +27,10 @@
 
 // ------------------------------------------
 // Generation parameters:
-//   output_name:         SOC_cmd_xbar_demux
-//   ST_DATA_W:           89
-//   ST_CHANNEL_W:        7
-//   NUM_OUTPUTS:         4
+//   output_name:         SoC_cmd_xbar_demux
+//   ST_DATA_W:           92
+//   ST_CHANNEL_W:        6
+//   NUM_OUTPUTS:         6
 //   VALID_WIDTH:         1
 // ------------------------------------------
 
@@ -40,14 +40,14 @@
 // 15610 - Warning: Design contains x input pin(s) that do not drive logic
 //------------------------------------------
 
-module SOC_cmd_xbar_demux
+module SoC_cmd_xbar_demux
 (
     // -------------------
     // Sink
     // -------------------
     input  [1-1      : 0]   sink_valid,
-    input  [89-1    : 0]   sink_data, // ST_DATA_W=89
-    input  [7-1 : 0]   sink_channel, // ST_CHANNEL_W=7
+    input  [92-1    : 0]   sink_data, // ST_DATA_W=92
+    input  [6-1 : 0]   sink_channel, // ST_CHANNEL_W=6
     input                         sink_startofpacket,
     input                         sink_endofpacket,
     output                        sink_ready,
@@ -56,32 +56,46 @@ module SOC_cmd_xbar_demux
     // Sources 
     // -------------------
     output reg                      src0_valid,
-    output reg [89-1    : 0] src0_data, // ST_DATA_W=89
-    output reg [7-1 : 0] src0_channel, // ST_CHANNEL_W=7
+    output reg [92-1    : 0] src0_data, // ST_DATA_W=92
+    output reg [6-1 : 0] src0_channel, // ST_CHANNEL_W=6
     output reg                      src0_startofpacket,
     output reg                      src0_endofpacket,
     input                           src0_ready,
 
     output reg                      src1_valid,
-    output reg [89-1    : 0] src1_data, // ST_DATA_W=89
-    output reg [7-1 : 0] src1_channel, // ST_CHANNEL_W=7
+    output reg [92-1    : 0] src1_data, // ST_DATA_W=92
+    output reg [6-1 : 0] src1_channel, // ST_CHANNEL_W=6
     output reg                      src1_startofpacket,
     output reg                      src1_endofpacket,
     input                           src1_ready,
 
     output reg                      src2_valid,
-    output reg [89-1    : 0] src2_data, // ST_DATA_W=89
-    output reg [7-1 : 0] src2_channel, // ST_CHANNEL_W=7
+    output reg [92-1    : 0] src2_data, // ST_DATA_W=92
+    output reg [6-1 : 0] src2_channel, // ST_CHANNEL_W=6
     output reg                      src2_startofpacket,
     output reg                      src2_endofpacket,
     input                           src2_ready,
 
     output reg                      src3_valid,
-    output reg [89-1    : 0] src3_data, // ST_DATA_W=89
-    output reg [7-1 : 0] src3_channel, // ST_CHANNEL_W=7
+    output reg [92-1    : 0] src3_data, // ST_DATA_W=92
+    output reg [6-1 : 0] src3_channel, // ST_CHANNEL_W=6
     output reg                      src3_startofpacket,
     output reg                      src3_endofpacket,
     input                           src3_ready,
+
+    output reg                      src4_valid,
+    output reg [92-1    : 0] src4_data, // ST_DATA_W=92
+    output reg [6-1 : 0] src4_channel, // ST_CHANNEL_W=6
+    output reg                      src4_startofpacket,
+    output reg                      src4_endofpacket,
+    input                           src4_ready,
+
+    output reg                      src5_valid,
+    output reg [92-1    : 0] src5_data, // ST_DATA_W=92
+    output reg [6-1 : 0] src5_channel, // ST_CHANNEL_W=6
+    output reg                      src5_startofpacket,
+    output reg                      src5_endofpacket,
+    input                           src5_ready,
 
 
     // -------------------
@@ -94,7 +108,7 @@ module SOC_cmd_xbar_demux
 
 );
 
-    localparam NUM_OUTPUTS = 4;
+    localparam NUM_OUTPUTS = 6;
     wire [NUM_OUTPUTS - 1 : 0] ready_vector;
 
     // -------------------
@@ -129,6 +143,20 @@ module SOC_cmd_xbar_demux
 
         src3_valid         = sink_channel[3] && sink_valid;
 
+        src4_data          = sink_data;
+        src4_startofpacket = sink_startofpacket;
+        src4_endofpacket   = sink_endofpacket;
+        src4_channel       = sink_channel >> NUM_OUTPUTS;
+
+        src4_valid         = sink_channel[4] && sink_valid;
+
+        src5_data          = sink_data;
+        src5_startofpacket = sink_startofpacket;
+        src5_endofpacket   = sink_endofpacket;
+        src5_channel       = sink_channel >> NUM_OUTPUTS;
+
+        src5_valid         = sink_channel[5] && sink_valid;
+
     end
 
     // -------------------
@@ -138,8 +166,10 @@ module SOC_cmd_xbar_demux
     assign ready_vector[1] = src1_ready;
     assign ready_vector[2] = src2_ready;
     assign ready_vector[3] = src3_ready;
+    assign ready_vector[4] = src4_ready;
+    assign ready_vector[5] = src5_ready;
 
-    assign sink_ready = |(sink_channel & {{3{1'b0}},{ready_vector[NUM_OUTPUTS - 1 : 0]}});
+    assign sink_ready = |(sink_channel & ready_vector);
 
 endmodule
 

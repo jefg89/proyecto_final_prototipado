@@ -1,0 +1,31 @@
+
+State Machine - |testCyclone4|SoC:u0|MainProyectoFinal:hw_ann_0|FSMNeuralNetwork:FSMNeuralNetworkCopia|State
+Name State.S18 State.S17 State.S16 State.S15 State.S14 State.S13 State.S12 State.S11 State.S10 State.S9 State.S8 State.S7 State.S6 State.S5 State.S4 State.S3 State.S2 State.S1 State.000000 
+State.000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+State.S1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+State.S2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+State.S3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+State.S4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+State.S5 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+State.S6 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+State.S7 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+State.S8 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+State.S9 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+State.S10 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+State.S11 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+State.S12 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+State.S13 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.S14 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.S15 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.S16 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.S17 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State.S18 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |testCyclone4|SoC:u0|SoC_NIOS:nios|SoC_NIOS_nios2_oci:the_SoC_NIOS_nios2_oci|SoC_NIOS_jtag_debug_module_wrapper:the_SoC_NIOS_jtag_debug_module_wrapper|SoC_NIOS_jtag_debug_module_tck:the_SoC_NIOS_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

@@ -124,7 +124,7 @@ module FSMNeuralNetwork(CLK, reset,Start,Read,Address,ResetInterfaz,ResetStart,R
 					NextState <= S16;
 				end
 				S16: begin  // **********EnableMultX = 0 and EnableRegOutMultCoeffX = 0 SELCoeffX= 00, EnableFuctAct=0, EnableRegFuctAct=0, SELCoeffY =00, EnableMultY=0,EnableSum=0,EnableRegDesplazamientro=0,SELOffset =0, Enable Acum=0, Listo = 1
-					if(Address==9'h000 && Read == 1'b1) NextState <= 17; // Direccion de memoria donde se hace la ultima lectura
+					if(Address==9'h000 && Read == 1'b1) NextState <= S17; // Direccion de memoria donde se hace la ultima lectura
 					else NextState <= S16;
 				end
 				S17: begin   // **********EnableMultX = 0 and EnableRegOutMultCoeffX = 0 SELCoeffX= 00, EnableFuctAct=0, EnableRegFuctAct=0, SELCoeffY =00, EnableMultY=0,EnableSum=0,EnableRegDesplazamientro=0,SELOffset =0, Enable Acum=0, Listo = 1
